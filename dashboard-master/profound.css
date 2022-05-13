@@ -1,0 +1,135 @@
+.sectionofcard{
+    width: 100%;
+    padding: 10px;
+}
+
+.cardsection {
+    padding: 2rem 2rem;
+    /* Grid styles */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 2rem;
+    grid-auto-rows: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .containigcard{
+      display: flex;
+      flex-direction: column;
+      background: white;
+      width: 100%;
+      padding: 20px 16px;
+    border-radius: 14px;
+    transition: 0.2s;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.075);
+  }
+.imgflexed{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoside{
+    width: 50%;
+}
+
+.logoside img{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.logoside svg{
+    width: 46px;
+    padding: 10px;
+    border-radius: 8px;
+ 
+}
+.tagside{
+    width: 100%;
+}
+
+.cardheadarea{
+    font-weight: 600;
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.cardsubtitle{
+    color: #83838e;
+    font-size: 13px;
+    margin-top: 14px;
+    line-height: 1.6em;
+}
+
+.job-card-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 3px;
+    gap: 15px;
+}
+.card-buttons, .card-buttons-msg {
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.search-buttons {
+    text-align: center;
+    border: none;
+    color: #fff;
+    background-color:#1063e8;
+    padding: 6px 6px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 14px;
+    border: 1px solid transparent;
+    transition-duration: 0.7s;
+}
+
+.job-card-button .search-buttons:hover{
+    background-color: white;
+    border: 1px solid #0162ff;
+    color: #000;
+} 
+
+
+
+.card-buttons-msg {
+    background-color:#f0f0f0;
+    color: #83838e;
+}
+
+
+
+.detail-button {
+    background-color: #e1ebfb;
+    color: #0162ff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.taggd{
+    height: fit-content;
+    background-color: #e1ebfb;
+    color: #0162ff;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 5px;
+    border-radius: 4px; 
+}
+
