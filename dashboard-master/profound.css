@@ -1,3 +1,31 @@
+:root {
+    --body-bg-color: #e5ecef;
+    --theme-bg-color: #fafafb;
+    --body-font: "Poppins", sans-serif;
+    --body-color: #2f2f33;
+    --active-color: #0162ff;
+    --active-light-color: #e1ebfb;
+    --header-bg-color: #fff;
+    --search-border-color: #efefef;
+    --border-color: #d8d8d8;
+    --alert-bg-color: #e8f2ff;
+    --subtitle-color: #83838e;
+    --inactive-color: #f0f0f0;
+    --placeholder-color: #9b9ba5;
+    --time-button: #fc5757;
+    --level-button: #5052d5;
+    --button-color: #fff;
+}
+
+:root {
+    --code-color: darkred;
+    --code-bg-color: #aaaaaa;
+    --code-font-size: 14px;
+    --code-line-height: 1.4;
+    --scroll-bar-color: #c5c5c5;
+    --scroll-bar-bg-color: #f6f6f6;
+}
+
 .sectionofcard{
     width: 100%;
     padding: 10px;
@@ -133,3 +161,110 @@ button, input, optgroup, select, textarea {
     border-radius: 4px; 
 }
 
+.explain-bar {
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    display: flex;
+    height: auto;
+    padding: 0 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+.explain-contents {
+    height: auto;
+    width: 80%;
+}
+.explain-title {
+    color: var(--subtitle-color);
+    font-size: 12px;
+    white-space: nowrap;
+    padding: 10px;
+}
+.explain-subtitle {
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: -2px;
+    white-space: nowrap;
+}
+
+.explain-contents + .explain-contents {
+    border-left: 1px solid var(--border-color);
+    padding-left: 16px;
+}
+.explain-title {
+    color: var(--subtitle-color);
+    font-size: 12px;
+    line-height: 40px;
+    white-space: nowrap;
+}
+
+.overview-text {
+    margin-top: 30px;
+}
+.overview-text-header {
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.overview-text-subheader {
+    font-size: 13px;
+    line-height: 2em;
+}
+
+input[type=text], select {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    padding: 10px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .fullwid{
+      width: 100%;
+  }
+  
+  .littl{
+      width: 30%;
+  }
+
+  @media screen and (max-width: 990px) {
+    .explain-contents, .explain-bar {
+      height: auto;
+    }
+  
+    .explain-bar {
+      flex-wrap: wrap;
+      padding-bottom: 14px;
+    }
+  
+    .explain-contents {
+      width: 50% !important;
+    }
+  
+    .explain-contents + .explain-contents {
+      padding: 0;
+      border: 0;
+    }
+  
+
+    .job-subtitle-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+
+  }
