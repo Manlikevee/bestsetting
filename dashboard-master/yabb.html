@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap4.min.css">
+
+<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="table.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;900&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - material icon link
+  -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="profound.css"> -->
+
+</head>
+
+<body>
+  <style>
+    .header-profile p{
+      margin: 0 !important;
+      padding: 0 !important;
+      box-sizing: border-box;
+    }
+
+    .user-action-list{
+      margin: 0;
+      padding: 0 !important;
+      box-sizing: border-box; 
+    }
+  </style>
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">
+        <svg role="status" class="spinner animation-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"></path>
+          <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"></path>
+          </svg>
+      </span>
+    </div>
+  </div>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="index_copy.html" class="logo">Dashboard</a>
+      </h1>
+
+      <button class="menu-toggle-btn icon-box" data-menu-toggle-btn aria-label="Toggle Menu">
+        <span class="material-symbols-rounded  icon">menu</span>
+      </button>
+
+      <nav class="navbar">
+        <div class="container">
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="index_copy_2.html" class="navbar-link active icon-box">
+                <span class="material-symbols-rounded  icon">grid_view</span>
+
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="index.html" class="navbar-link icon-box">
+                <span class="material-symbols-rounded  icon">folder</span>
+
+                <span>Projects</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link icon-box">
+                <span class="material-symbols-rounded  icon">list</span>
+
+                <span>Tasks</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link icon-box">
+                <span class="material-symbols-rounded  icon">bar_chart</span>
+
+                <span>Reports</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link icon-box">
+                <span class="material-symbols-rounded  icon">settings</span>
+
+                <span>Settings</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="user-action-list">
+
+            <li>
+              <a href="#" class="notification icon-box">
+                <span class="material-symbols-rounded  icon">notifications</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header-profile">
+
+                <figure class="profile-avatar">
+                  <img src="./assets/images/avatar-1.jpg" alt="Elizabeth Foster" width="32" height="32">
+                </figure>
+
+                <div>
+                  <p class="profile-title">Elizabeth F</p>
+
+                  <p class="profile-subtitle">Admin</p>
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+  <main>
+    <div class="site-wrap">
+    
+    
+    <!-- HOME -->
+
+    
+    <section class="site-section">
+      <div class="mtcontainers">
+      
+    
+      <section id="content">
+        <main class="mai">
+    
+    
+        <ul class="box-info">
+            <li>
+                <i class='bx bx-check-square'></i>
+    <a href="accepted.html">
+                <span class="text">
+                    <h3>7</h3>
+                    <p>Accepted</p>
+                </span> 
+              </a>
+            </li>
+            <li>
+                <i class='bx bx-no-entry' ></i>
+                <a href="">
+                <span class="text">
+                    <h3>5</h3>
+                    <p>Pending</p>
+                </span>
+              </a>
+            </li>
+            <li>
+                <i class='bx bx-bell-off'></i>
+                <a href="">
+                <span class="text">
+                    <h3>1</h3>
+                    <p>Rejected</p>
+                </span>
+              </a>
+            </li>
+            <li>
+                <i class='bx bx-edit' ></i>
+               <a href="">
+                <span class="text">
+                    <h3>1</h3>
+                    <p>Under Review</p>
+                </span>
+              </a>
+            </li>
+        </ul>
+    </main>
+    </section>
+      <div class="tabled">
+    
+        <table id="example" class="table dt-responsive nowrap" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>First name</th>
+                        <th>Last name</th>
+                        <th>Email</th>
+                        <th>Job Name</th>
+                        <th>Date Applied</th>
+                        <th>Status</th>
+                        <th>Application</th>
+                    </tr>
+                </thead>
+                    <tbody>
+         
+                        <tr>
+                            <td>Omumatu</td>
+                            <td>Ogechukwu</td>
+                             <td>jobberman@gmail.com </td>
+                            <td>UI/UX Designer</td>
+                            <td>March 12, 2022 </td>
+                            <td> <span class="status Pending">Pending</span></td>
+                            <td><a href="/singleadminapplications/1/">Application </a></td>
+                        </tr>
+            
+                        <tr>
+                            <td></td>
+                            <td></td>
+                             <td>jobskibo@gmail.com </td>
+                            <td>User Experience Designer</td>
+                            <td>March 13, 2022 </td>
+                            <td> <span class="status Accepted">Accepted</span></td>
+                            <td><a href="/singleadminapplications/2/">Application </a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>Odah</td>
+                            <td>Victor</td>
+                             <td>viktortech7@gmail.com </td>
+                            <td>UI/UX Designer</td>
+                            <td>March 14, 2022 </td>
+                            <td> <span class="status Accepted">Accepted</span></td>
+                            <td><a href="/singleadminapplications/4/">Application </a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>Odah</td>
+                            <td>Victor</td>
+                             <td>viktortech7@gmail.com </td>
+                            <td>Senior Backend Software Engineer</td>
+                            <td>March 14, 2022 </td>
+                            <td> <span class="status Accepted">Accepted</span></td>
+                            <td><a href="/singleadminapplications/7/">Application </a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>Odah</td>
+                            <td>Victor</td>
+                             <td>viktortech7@gmail.com </td>
+                            <td>Model Administrator</td>
+                            <td>March 14, 2022 </td>
+                            <td> <span class="status Pending">Pending</span></td>
+                            <td><a href="/singleadminapplications/9/">Application </a></td>
+                        </tr>
+            
+                        <tr>
+                            <td></td>
+                            <td></td>
+                             <td>mmm@gmsil.com </td>
+                            <td>User Experience Designer</td>
+                            <td>March 15, 2022 </td>
+                            <td> <span class="status Accepted">Accepted</span></td>
+                            <td><a href="/singleadminapplications/10/">Application </a></td>
+                        </tr>
+            
+                        <tr>
+                            <td></td>
+                            <td></td>
+                             <td>mmm@gmsil.com </td>
+                            <td>Senior Backend Software Engineer</td>
+                            <td>March 15, 2022 </td>
+                            <td> <span class="status Pending">Pending</span></td>
+                            <td><a href="/singleadminapplications/11/">Application </a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>Odah</td>
+                            <td>Victor</td>
+                             <td>viktortech7@gmail.com </td>
+                            <td>Product Designer</td>
+                            <td>March 15, 2022 </td>
+                            <td> <span class="status Accepted">Accepted</span></td>
+                            <td><a href="/singleadminapplications/12/">Application </a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>Odah</td>
+                            <td>Victor</td>
+                             <td>viktortech7@gmail.com </td>
+                            <td>User Experience Designer</td>
+                            <td>March 15, 2022 </td>
+                            <td> <span class="status Rejected">Rejected</span></td>
+                            <td><a href="/singleadminapplications/15/">Application </a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>Odah</td>
+                            <td>Victor</td>
+                             <td>viktortech7@gmail.com </td>
+                            <td>Microsoft Word Expert</td>
+                            <td>March 15, 2022 </td>
+                            <td> <span class="status Under_Review">Under_Review</span></td>
+                            <td><a href="/singleadminapplications/16/">Application </a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>Odah</td>
+                            <td>Victor</td>
+                             <td>viktortech7@gmail.com </td>
+                            <td>React Engineer</td>
+                            <td>March 17, 2022 </td>
+                            <td> <span class="status Pending">Pending</span></td>
+                            <td><a href="/singleadminapplications/20/">Application </a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>Odah</td>
+                            <td>Victor</td>
+                             <td>viktortech7@gmail.com </td>
+                            <td>android dev</td>
+                            <td>March 17, 2022 </td>
+                            <td> <span class="status Pending">Pending</span></td>
+                            <td><a href="/singleadminapplications/21/">Application </a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>Odah</td>
+                            <td>Victor</td>
+                             <td>viktortech7@gmail.com </td>
+                            <td>react Dev</td>
+                            <td>March 17, 2022 </td>
+                            <td> <span class="status Accepted">Accepted</span></td>
+                            <td><a href="/singleadminapplications/22/">Application </a></td>
+                        </tr>
+            
+                        <tr>
+                            <td>ODAH</td>
+                            <td>VICTOR</td>
+                             <td>odahviktor@gmail.com </td>
+                            <td>react Dev</td>
+                            <td>March 24, 2022 </td>
+                            <td> <span class="status Accepted">Accepted</span></td>
+                            <td><a href="/singleadminapplications/24/">Application </a></td>
+                        </tr>
+            
+                    </tbody>
+            </table>
+        
+            </div>
+          </div>
+    </section>
+    
+    
+
+      
+      </div>
+
+
+
+  </main>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="footer-list">
+
+        <li class="footer-item">
+          <a href="#" class="footer-link">About</a>
+        </li>
+
+        <li class="footer-item">
+          <a href="#" class="footer-link">Privacy</a>
+        </li>
+
+        <li class="footer-item">
+          <a href="#" class="footer-link">Terms</a>
+        </li>
+
+        <li class="footer-item">
+          <a href="#" class="footer-link">Developers</a>
+        </li>
+
+        <li class="footer-item">
+          <a href="#" class="footer-link">Support</a>
+        </li>
+
+      </ul>
+
+      <p class="copyright">
+        &copy; 2022 <a href="#" class="copyright-link">Victor</a>. All Rights Reserved
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+
+  <script src="static/js/jquery.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="static/js/custom.js"></script>  
+          
+  <script src="static/js/sweet-alert.js"></script>
+  <script src="static/js/sweet-alert-ajax.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap4.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap4.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+        $('#example').DataTable();
+    } );
+    </script>
+
+
+</body>
+
+</html>
