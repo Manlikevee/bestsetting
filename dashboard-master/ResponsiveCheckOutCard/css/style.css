@@ -1,0 +1,465 @@
+/*Var*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+
+.form-control {
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 0.5rem 10px;
+  border-radius: 6px;
+  outline: 0px;
+  transition: border-color 0.3s ease;
+  color: #697386;
+  height: 34px;
+  font-size: 1rem;
+  background-color: #fff; }
+  .form-control:focus {
+    transition: border-color 0.3s ease;
+    border-color: #2F80ED; }
+
+.select-custom {
+  position: relative; }
+  .select-custom:before {
+    content: "\e10f";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    bottom: 0px;
+    margin: auto;
+    font-family: "ap";
+    pointer-events: none; }
+  .select-custom .form-control {
+    -webkit-appearance: none;
+    appearance: none;
+    padding-right: 20px;
+    color: #000; }
+
+.label-text {
+  margin-bottom: 0.5rem;
+  color: #697386; }
+
+.form-group {
+  margin-bottom: 2rem; }
+
+.box-checkout-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%; }
+  .box-checkout-wrapper .box-col {
+    padding: 2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+  .box-checkout-wrapper .content {
+    max-width: 400px;
+    margin: auto; }
+
+.box-product-info .logo {
+  display: block;
+  margin-bottom: 2rem; }
+  .box-product-info .logo img {
+    width: 48px; }
+
+.box-product-info .back {
+  display: block;
+  color: #1A1F36;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 3rem; }
+  .box-product-info .back:hover {
+    color: #2F80ED; }
+
+.box-product-info .pricing-box {
+  margin-bottom: 1rem; }
+  .box-product-info .pricing-box .name {
+    color: #697386;
+    margin-bottom: 0.5rem; }
+  .box-product-info .pricing-box .price {
+    font-size: 2rem;
+    font-weight: 500; }
+
+.box-product-info .product-image {
+  max-width: 320px; }
+  .box-product-info .product-image img {
+    width: 100%;
+    border-radius: 10px; }
+
+.box-product-payment {
+  background-color: #fff;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.08);
+  min-height: 100vh;
+overflow: scroll;
+ }
+  .box-product-payment .btn-apple-pay {
+    background-color: #000;
+    display: block;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    padding: 0.5rem 2rem;
+    text-align: center;
+ }
+    .box-product-payment .btn-apple-pay:hover {
+      opacity: 0.7; }
+  .box-product-payment .or {
+    position: relative;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #697386; }
+    .box-product-payment .or:before {
+      height: 1px;
+      bottom: 0px;
+      content: "";
+      top: 0px;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      margin: auto;
+      background-color: #e0e0e0; }
+    .box-product-payment .or span {
+      position: relative;
+      background-color: #fff;
+      z-index: 1;
+      padding: 5px; }
+  .box-product-payment .form-card {
+    height: auto;
+    padding: 0px; }
+    .box-product-payment .form-card .form-control {
+      border: 0px; }
+    .box-product-payment .form-card .top {
+      display: flex;
+      border-bottom: 1px solid #e0e0e0; }
+      .box-product-payment .form-card .top .form-control {
+        flex: 1; }
+      .box-product-payment .form-card .top .typecard {
+        white-space: nowrap;
+        padding: 0.5rem; }
+        .box-product-payment .form-card .top .typecard .icon {
+          display: inline-block; }
+        .box-product-payment .form-card .top .typecard img {
+          height: 16px; }
+    .box-product-payment .form-card .bottom {
+      display: flex; }
+      .box-product-payment .form-card .bottom .date {
+        flex: 1; }
+      .box-product-payment .form-card .bottom .cvc {
+        width: 50%;
+        display: flex;
+        border-left: 1px solid #e0e0e0;
+        align-items: center; }
+      .box-product-payment .form-card .bottom .icon {
+        padding: 0.5rem; }
+  .box-product-payment .form-country {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden; }
+    .box-product-payment .form-country .form-control {
+      border-radius: 0px;
+      border: 0px; }
+    .box-product-payment .form-country .select-custom {
+      border-bottom: 1px solid #e0e0e0; }
+  .box-product-payment .actions .btn {
+    width: 100%;
+    padding: 0.75rem 2rem;
+    display: block;
+    min-height: 34px;
+    border: 0px;
+    background-color: #2F80ED;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease; }
+    .box-product-payment .actions .btn:hover {
+      transition: background-color 0.2s ease;
+      background-color: #000; }
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 50%;
+  text-align: center;
+  padding: 1rem;
+  color: #697386;
+  font-size: 12px; }
+  .footer .powered {
+    margin-right: 1rem;
+    display: inline-block; }
+  .footer .menus {
+    display: inline-block; }
+    .footer .menus a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      color: #697386;
+      text-decoration: none; }
+      .footer .menus a:hover {
+        color: #2F80ED; }
+
+@media (max-width: 768px) {
+  .box-checkout-wrapper {
+    height: auto;
+    display: block; }
+    .box-checkout-wrapper .box-col {
+      width: 100%;
+      height: auto; }
+  .footer {
+    position: relative;
+    margin-top: 2rem; } }
+
+
+    :root {
+      --body-bg-color: #e5ecef;
+      --theme-bg-color: #fafafb;
+      --body-font: "Poppins", sans-serif;
+      --body-color: #2f2f33;
+      --active-color: #0162ff;
+      --active-light-color: #e1ebfb;
+      --header-bg-color: #fff;
+      --search-border-color: #efefef;
+      --border-color: #d8d8d8;
+      --alert-bg-color: #e8f2ff;
+      --subtitle-color: #83838e;
+      --inactive-color: #f0f0f0;
+      --placeholder-color: #9b9ba5;
+      --time-button: #fc5757;
+      --level-button: #5052d5;
+      --button-color: #fff;
+  }
+  
+  :root {
+      --code-color: darkred;
+      --code-bg-color: #aaaaaa;
+      --code-font-size: 14px;
+      --code-line-height: 1.4;
+      --scroll-bar-color: #c5c5c5;
+      --scroll-bar-bg-color: #f6f6f6;
+  }
+  
+  .sectionofcard{
+      width: 100%;
+      padding: 10px;
+  }
+  
+  .cardsection {
+      padding: 2rem 2rem;
+      /* Grid styles */
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-gap: 2rem;
+      grid-auto-rows: 1fr;
+      grid-template-rows: 1fr;
+    }
+  
+    .containigcard{
+        display: flex;
+        flex-direction: column;
+        background: white;
+        width: 100%;
+        padding: 20px 16px;
+      border-radius: 14px;
+      transition: 0.2s;
+      box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.075);
+    }
+  .imgflexed{
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .logoside{
+      width: 50%;
+  }
+  
+  .logoside img{
+      width: 100%;
+      height: 50px;
+      padding: 10px;
+      border-radius: 8px;
+  }
+  
+  .logoside svg{
+      width: 46px;
+      padding: 10px;
+      border-radius: 8px;
+   
+  }
+  .tagside{
+      width: 100%;
+  }
+  
+  .cardheadarea{
+      font-weight: 600;
+      margin-top: 16px;
+      font-size: 14px;
+  }
+  
+  .cardsubtitle{
+      color: #83838e;
+      font-size: 13px;
+      margin-top: 14px;
+      line-height: 1.6em;
+  }
+  
+  .job-card-button{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: auto;
+      padding-top: 3px;
+      gap: 15px;
+  }
+  .card-buttons, .card-buttons-msg {
+      padding: 10px;
+      width: 100%;
+      font-size: 15px;
+      cursor: pointer;
+  }
+  
+  .search-buttons {
+      text-align: center;
+      border: none;
+      color: #fff;
+      background-color:#1063e8;
+      padding: 6px 6px;
+      border-radius: 6px;
+      font-size: 15px;
+      font-weight: 500;
+      margin-top: 14px;
+      border: 1px solid transparent;
+      transition-duration: 0.7s;
+  }
+  
+  .job-card-button .search-buttons:hover{
+      background-color: white;
+      border: 1px solid #0162ff;
+      color: #000;
+  } 
+  
+  
+  
+  .card-buttons-msg {
+      background-color:#f0f0f0;
+      color: #83838e;
+  }
+  
+  
+  
+  .detail-button {
+      background-color: #e1ebfb;
+      color: #0162ff;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 6px 8px;
+      border-radius: 4px;
+  }
+  
+  button, input, optgroup, select, textarea {
+      font-family: sans-serif;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+  }
+  
+  .taggd{
+      height: fit-content;
+      background-color: #e1ebfb;
+      color: #0162ff;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 4px 5px;
+      border-radius: 4px; 
+  }
+  
+  .explain-bar {
+      width: 95%;
+      margin: auto;
+      margin-top: 20px;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      display: flex;
+      height: auto;
+      padding: 0 16px;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .explain-contents {
+      height: auto;
+      width: 80%;
+  }
+  .explain-title {
+      color: var(--subtitle-color);
+      font-size: 12px;
+      white-space: nowrap;
+      padding: 10px;
+  }
+  .explain-subtitle {
+      font-size: 13px;
+      font-weight: 500;
+      margin-top: -2px;
+      white-space: nowrap;
+  }
+  
+  .explain-contents + .explain-contents {
+      border-left: 1px solid var(--border-color);
+      padding-left: 16px;
+  }
+  .explain-title {
+      color: var(--subtitle-color);
+      font-size: 12px;
+      line-height: 40px;
+      white-space: nowrap;
+  }
+  
+  .overview-text {
+      margin-top: 30px;
+  }
+  .overview-text-header {
+      font-weight: 600;
+      margin-bottom: 25px;
+  }
+  .overview-text-subheader {
+      font-size: 13px;
+      line-height: 2em;
+  }
+ 
+  
+    @media screen and (max-width: 990px) {
+      .explain-contents, .explain-bar {
+        height: auto;
+      }
+
+      .box-product-payment{
+        height: auto;
+        overflow: visible;
+      }
+    
+      .explain-bar {
+        flex-wrap: wrap;
+        padding-bottom: 14px;
+      }
+    
+      .explain-contents {
+        width: 50% !important;
+      }
+    
+      .explain-contents + .explain-contents {
+        padding: 0;
+        border: 0;
+      }
+    
+  
+      .job-subtitle-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+  
+    }
