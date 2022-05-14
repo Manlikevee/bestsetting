@@ -1,0 +1,227 @@
+.carding{
+    display: flex;
+    width: 94%;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.sectioning{
+    width: 90%; margin:auto; margin-top: 30px;
+}
+.whitecolor{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px; 
+}
+.abtsize{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.sectioning{
+display: flex;
+flex-direction: column; 
+   gap: 20px;
+}
+.containerz{
+    display: flex;
+    width: 99%;
+    margin: auto;
+    padding: 30px;
+ 
+}
+
+.anotherflex{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.dflex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+.d-flex2{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-fill{
+    margin-left: auto;
+}
+
+.miniflex{
+    display: flex;
+    gap: 20px;
+}
+
+.disposs{
+    display: flex;
+    gap: 10px;
+}
+
+.col-md-4{
+    width: 50%;
+    height: 100px;
+}
+
+.col-md-4 img{
+width: 100px;
+height: 100px;
+}
+
+.col-md-8{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.my-4{
+    display: flex;
+    flex: content;
+}
+
+.projectbodys{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.carx{
+    width: 100%;
+    font-size: 16px;
+    text-align: start;
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.ods{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.d-flexed{
+    display: flex;
+}
+
+
+.general{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.iconflex{
+    display: flex;
+    gap: 10px;
+}
+
+.border-5 {
+font-size: 14px;
+font-weight: 300;
+line-height: normal;
+}
+
+.mylest{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-decoration: none;
+    color: #424243;
+}
+
+.mylest a{
+    color: #424243;
+    text-decoration: none;
+}
+
+.ps4{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.textmuted{
+    font-size: 13px;
+    font-weight: 300;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 9px;
+    background-color: rgba(2, 2, 65, 0.749);
+    color: white;
+    margin-top: 9px;
+}
+
+.iconflexs{
+    display: flex;
+    gap: 3px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.text-mutedss{
+    display: flex;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 960px) {
+    .miniflex{
+        flex-direction: column;
+    }
+    .sectioning{
+        width: 100%; margin:auto; margin-top: 30px;
+    }
+    .card-body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .containerz .card-body {
+        align-items: start;
+    }
+
+  }
+  @media only screen and (max-width: 760px) {
+    .dflex{
+        width: 100%;
+        text-align: center;
+    }
+
+    .flex-fill{
+        margin-top: 40px;
+    }
+    .containerz {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        padding: 19px;
+    }
+    .disposs {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .card-text{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+  }

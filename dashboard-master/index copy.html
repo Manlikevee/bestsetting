@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;900&display=swap"
+    rel="prefetch" as="style">
+
+    <link rel="stylesheet" href="cprof.css">
+  <!-- 
+    - material icon link
+  -->
+
+
+
+
+</head>
+
+<body>
+
+  <style>
+a{
+  text-decoration: none !important;
+
+}
+  </style>
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">
+        <svg role="status" class="spinner animation-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"></path>
+          <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"></path>
+          </svg>
+      </span>
+    </div>
+  </div>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="index_copy.html" class="logo">Dashboard</a>
+      </h1>
+
+      <button class="menu-toggle-btn icon-box" data-menu-toggle-btn aria-label="Toggle Menu">
+        <span class="material-symbols-rounded  icon">menu</span>
+      </button>
+
+      <nav class="navbar">
+        <div class="container">
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="index_copy_2.html" class="navbar-link active icon-box">
+                <span class="material-symbols-rounded  icon">grid_view</span>
+
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="index.html" class="navbar-link icon-box">
+                <span class="material-symbols-rounded  icon">folder</span>
+
+                <span>Projects</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link icon-box">
+                <span class="material-symbols-rounded  icon">list</span>
+
+                <span>Tasks</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="auth/500.html" class="navbar-link icon-box">
+                <span class="material-symbols-rounded  icon">bar_chart</span>
+
+                <span>Reports</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="auth/404.html" class="navbar-link icon-box">
+                <span class="material-symbols-rounded  icon">settings</span>
+
+                <span>Settings</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="user-action-list">
+
+            <li>
+              <a href="auth/login.html" class="notification icon-box">
+                <span class="material-symbols-rounded  icon">notifications</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header-profile">
+
+                <figure class="profile-avatar">
+                  <img src="./assets/images/avatar-1.jpg" alt="Elizabeth Foster" width="32" height="32">
+                </figure>
+
+                <div>
+                  <p class="profile-title">Elizabeth F</p>
+
+                  <p class="profile-subtitle">Admin</p>
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+  <main>
+    <section class="sectioning">
+      <div class="carding">
+        <div class="card-body d-flex align-items-center justify-content-start p-5 flex-sm-column flex-column flex-md-row">
+          <img src="https://i.ibb.co/px2XJnS/profile.png" class="rounded-circle bg-secondary mb-sm-4 mb-4 mb-md-0" alt="profile" width="200" />
+          <div class="dflex">
+            <h1 class="display-4 fw-bold mb-0">Name</h1>
+            <p class="fs-3 fw-normal">Developer</p>
+            <div class="d-flex2 align-items-center justify-content-between">
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, accusantium. lorem50
+            </div>
+          </div>
+          <div class="flex-fill d-flex align-items-center justify-content-center justify-content-md-end">
+            <button class="btn btn-primary btn-lg">
+              <i class="bi bi-person-lines-fill me-3"></i>Contact Me
+            </button>
+          </div>
+        </div>
+      </div>
+    
+      <div class="containerz h-100">
+        <div class="miniflex">
+          <div class="anotherflex">
+            <div class="whitecolor">
+              <div class="card-bodys">
+                <h2 class="c">About Me</h2>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus,
+                  quos consequatur dolore itaque rem dolor maiores qui quidem
+                  fugiat voluptate quisquam, quod atque similique! Dolores
+                  excepturi cum temporibus optio reiciendis. Qui, magnam? Alias
+                  dicta voluptate delectus laborum aliquam, omnis doloribus vero
+                  quo? Nulla magni, maxime sit accusantium nemo error repudiandae
+                  mollitia ipsam molestiae provident rerum, voluptate ex odit
+                  recusandae aut. Architecto esse assumenda quod voluptatem. Ab
+                  optio dolores pariatur possimus! Reiciendis rem nulla ipsum
+                  nemo. Tempore commodi, quod aspernatur veritatis delectus qui,
+                  minima expedita minus quasi natus saepe deserunt laborum? Iste
+                  eos voluptas nemo! A ullam incidunt quaerat eius in optio
+                  voluptates, sit minima? Eaque, nesciunt sit, molestiae non ipsam
+                  cum ab maiores ratione quae eum quibusdam pariatur, explicabo
+                  id. Commodi voluptates iure recusandae quod? Accusantium magni
+                  sapiente officia quidem explicabo mollitia nihil quas eligendi
+                  nulla provident ipsum voluptatem pariatur, quaerat incidunt
+                  totam voluptas commodi aut! Molestiae obcaecati quis aspernatur.
+                </p>
+              </div>
+            </div>
+    
+            <div class="whitecolor">
+              <div class="projectbody">
+                <h2 class="">Projects</h2>
+                <div>
+                  <div class="disposs">
+                    <div class="col-md-4 mb-4 mb-md-0 mb-auto">
+                      <img src="https://raw.githubusercontent.com/neeraj15022001/bootstrap-resume/master/logo.png" alt="logo" class="img-fluid bg-secondary rounded" />
+                    </div>
+                    <div class="col-md-8">
+                      <p class="fs-2 fw-bolder text-dark">Project 1</p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Officia fuga corrupti, eligendi quam odit, laudantium
+                        dolorum harum distinctio impedit, eaque tenetur! Fugiat
+                        ipsum cum tenetur amet id pariatur corrupti repellat!
+                        Illum labore, earum ad consequuntur architecto error
+                        eveniet cum ipsam repellendus. Fuga aspernatur a illum
+                        explicabo laborum blanditiis possimus maiores minima saepe
+                        quos vero quam, commodi quasi repudiandae minus sit?
+                      </p>
+                      <a href="" class="
+                            stretched-link
+                            text-capitalize text-decoration-none
+                          "><i class="bi bi-link-45deg me-1"></i>Find out more</a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="whitecolor border-0 rounded shadow-sm p-3 mb-3">
+              <div class="projectbodys">
+                <h2 class="carx">Work Experience</h2>
+                <div class="ods">
+                  <p>
+                    <span class="fw-bold text-secondary fs-5">Founder and Lead Developer</span><span class="text-muted">- Project 1</span>
+                  </p>
+                  <p class="abtsize">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Asperiores rerum eos similique voluptatibus, reprehenderit ab
+                    dicta explicabo dolores porro id sint! Totam consequatur
+                    sapiente beatae quos necessitatibus excepturi cum qui!
+                    Accusantium aut, vitae, consequuntur nesciunt accusamus nisi
+                    voluptatem illum quos qui laborum consequatur quis, alias
+                    soluta. Quo esse, excepturi in dignissimos minus eveniet nihil
+                    expedita. Expedita quae eveniet nemo rem.
+                  </p>
+                </div>
+              </div>
+              <hr class="my-3" />
+            </div>
+          </div>
+          <div class="general">
+            <div class="whitecolor">
+              <div class="card-body">
+                <div class="mylest">
+                  <div class="iconflex">
+                    <i class="bi bi-geo-alt-fill text-danger"></i>
+                    <span class="ms-2">Punjab,India</span>
+                  </div>
+                  <div class="iconflex">
+                    <i class="bi bi-envelope-fill text-primary"></i>
+                    <a href="mailto:gneeraj32595@gmail.com" class="ms-2 text-decoration-none text-dark">gneeraj32595@gmail.com</a>
+                  </div>
+                  <div class="iconflex">
+                    <i class="bi bi-telephone-fill text-success"></i>
+                    <a href="#" class="ms-2 text-decoration-none text-dark">+91 12345 12345</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="whitecolor">
+              <div class="cardinf">
+                <h2 class="car">Testimonial</h2>
+                <div class="mb-5">
+                  <div>
+                    <div class="border-start border-5 border-primary ps-4">
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Dolore corrupti animi aperiam, corporis, rem quisquam
+                        sapiente nihil dicta culpa repellendus sequi voluptatum
+                        enim similique saepe! Cumque eos labore sunt quisquam.
+                      </p>
+                    </div>
+                    <div class="ps-4">
+                      <p class="textmuted">Name</p>
+                      <p class="textmuted">Position</p>
+                      <p class="textmuted">Name</p>
+                      <p class="textmuted">Posit</p>
+                      <p class="textmuted">oject Name</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="whitecolor">
+              <div class="car">
+                <h2 class="card-title fs-3 fw-bold mb-4">Education</h2>
+                <div class="iconflex">
+                  <div class="">
+                    <i class="m-0 p-0 bi bi-building"></i>
+                  </div>
+                  <div class="iconflexs">
+                    <p class="fw-bold">Scl</p>
+                    <p class="text-muted">BE (2019 - Current)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="whitecolor">
+              <div class="c">
+                <h2 class="card-title fs-3 fw-bold mb-4">Languages</h2>
+                <div class="">
+                  <p class="text-mutedss">
+                    <span class="fw-bold text-secondary">English: </span>Proficient
+                  </p>
+                  <div class="
+                        d-flex
+                        align-items-center
+                        justify-content-center
+                        text-warning
+                      ">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill ms-1"></i>
+                    <i class="bi bi-star-fill ms-1"></i>
+                    <i class="bi bi-star-fill ms-1"></i>
+                    <i class="bi bi-star-fill ms-1"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="footer-list">
+
+        <li class="footer-item">
+          <a href="#" class="footer-link">About</a>
+        </li>
+
+        <li class="footer-item">
+          <a href="#" class="footer-link">Privacy</a>
+        </li>
+
+        <li class="footer-item">
+          <a href="#" class="footer-link">Terms</a>
+        </li>
+
+        <li class="footer-item">
+          <a href="#" class="footer-link">Developers</a>
+        </li>
+
+        <li class="footer-item">
+          <a href="#" class="footer-link">Support</a>
+        </li>
+
+        <li class="footer-item">
+          <a href="#" class="footer-link">Careers</a>
+        </li>
+
+      </ul>
+
+      <p class="copyright">
+        &copy; 2022 <a href="#" class="copyright-link">Victor</a>. All Rights Reserved
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+
+  <script src="static/js/jquery.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="static/js/custom.js"></script>  
+  <script>
+    $(window).load(function() {
+    $('.material-symbols-rounded').css('opacity','1');
+});
+  </script>
+          
+  <script src="static/js/sweet-alert.js"></script>
+  <script src="static/js/sweet-alert-ajax.js"></script>
+  <script src="./assets/js/script.js"></script>
+
+
+</body>
+
+</html>
