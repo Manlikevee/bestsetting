@@ -1,8 +1,15 @@
 /*Var*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px; }
 
-
+html, body {
+  font-size: 14px;
+  height: 100%;
+  font-family: 'Poppins', sans-serif; }
 
 .form-control {
   border: 1px solid #e0e0e0;
