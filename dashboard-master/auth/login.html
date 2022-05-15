@@ -18,6 +18,9 @@
 body{
 font-family: "Poppins", sans-serif;
 }
+.max-w-sm {
+    max-width: 32rem !important;
+}
 
 .bg-blue-500{
   background-color:rgb(37 99 235)!important;
@@ -25,6 +28,52 @@ font-family: "Poppins", sans-serif;
 }
 .bg-blue-500:hover{
   opacity: 0.5;
+}
+
+.spinner {
+  color: rgb(229, 231, 235);
+  height: 50px;
+  width: 50px;
+  fill: #1c64f2;
+}
+
+.myown{
+  display:flex;
+   gap: 10px; 
+  flex-wrap: no-wrap;
+}
+
+
+.myown2{
+  width: 50%;
+}
+@media (max-width: 770px) {
+  .myown{
+  display:flex;
+  flex-direction: column;
+   gap: 2px; 
+  flex-wrap: no-wrap;
+}
+
+.myown2{
+  width: 100%;
+}
+}
+
+
+.animation-spin {
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+@keyframes spin {
+  0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg);
+  }
 }
       </style>
     
@@ -34,18 +83,21 @@ font-family: "Poppins", sans-serif;
         x-ref="loading"
         class="fixed inset-0 z-50 flex items-center justify-center text-2xl font-semibold text-white bg-primary-darker"
       >
-        Loading.....
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">
+          <svg role="status" class="spinner animation-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"></path>
+            <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"></path>
+            </svg>
+        </span>
+      </div>  
+
       </div>
       <div
         class="flex flex-col items-center justify-center min-h-screen p-4 space-y-4 antialiased text-gray-900 bg-gray-100 dark:bg-dark dark:text-light"
       >
         <!-- Brand -->
-        <a
-          href="../index.html"
-          class="inline-block mb-6 text-3xl font-bold tracking-wider uppercase text-primary-dark dark:text-light"
-        >
-          K-WD
-        </a>
+
         <main>
           <div class="w-full max-w-sm px-4 py-6 space-y-6 bg-white rounded-md dark:bg-darker">
             <h1 class="text-xl font-semibold text-center">Login</h1>
@@ -101,51 +153,60 @@ font-family: "Poppins", sans-serif;
 
             <!-- Social login links -->
             <!-- Brand icons src https://boxicons.com -->
-            <a
-              href="#"
-              class="flex items-center justify-center px-4 py-2 space-x-2 text-white transition-all duration-200 bg-black rounded-md hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 dark:focus:ring-offset-darker"
-            >
-              <svg
-                aria-hidden="true"
-                class="w-6 h-6 text-white"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M12.026,2c-5.509,0-9.974,4.465-9.974,9.974c0,4.406,2.857,8.145,6.821,9.465 c0.499,0.09,0.679-0.217,0.679-0.481c0-0.237-0.008-0.865-0.011-1.696c-2.775,0.602-3.361-1.338-3.361-1.338 c-0.452-1.152-1.107-1.459-1.107-1.459c-0.905-0.619,0.069-0.605,0.069-0.605c1.002,0.07,1.527,1.028,1.527,1.028 c0.89,1.524,2.336,1.084,2.902,0.829c0.091-0.645,0.351-1.085,0.635-1.334c-2.214-0.251-4.542-1.107-4.542-4.93 c0-1.087,0.389-1.979,1.024-2.675c-0.101-0.253-0.446-1.268,0.099-2.64c0,0,0.837-0.269,2.742,1.021 c0.798-0.221,1.649-0.332,2.496-0.336c0.849,0.004,1.701,0.115,2.496,0.336c1.906-1.291,2.742-1.021,2.742-1.021 c0.545,1.372,0.203,2.387,0.099,2.64c0.64,0.696,1.024,1.587,1.024,2.675c0,3.833-2.33,4.675-4.552,4.922 c0.355,0.308,0.675,0.916,0.675,1.846c0,1.334-0.012,2.41-0.012,2.737c0,0.267,0.178,0.577,0.687,0.479 C19.146,20.115,22,16.379,22,11.974C22,6.465,17.535,2,12.026,2z"
-                ></path>
-              </svg>
-              <span> Register using Github </span>
-            </a>
-            <a
-            href="#"
-            class="flex items-center justify-center px-4 py-2 space-x-2 text-white transition-all duration-200 bg-blue-500 rounded-md hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 dark:focus:ring-offset-darker"
-          >
-          <svg class="w-4" viewBox="0 0 533.5 544.3">
-            <path
-              d="M533.5 278.4c0-18.5-1.5-37.1-4.7-55.3H272.1v104.8h147c-6.1 33.8-25.7 63.7-54.4 82.7v68h87.7c51.5-47.4 81.1-117.4 81.1-200.2z"
-              fill="#4285f4"
-            />
-            <path
-              d="M272.1 544.3c73.4 0 135.3-24.1 180.4-65.7l-87.7-68c-24.4 16.6-55.9 26-92.6 26-71 0-131.2-47.9-152.8-112.3H28.9v70.1c46.2 91.9 140.3 149.9 243.2 149.9z"
-              fill="#34a853"
-            />
-            <path
-              d="M119.3 324.3c-11.4-33.8-11.4-70.4 0-104.2V150H28.9c-38.6 76.9-38.6 167.5 0 244.4l90.4-70.1z"
-              fill="#fbbc04"
-            />
-            <path
-              d="M272.1 107.7c38.8-.6 76.3 14 104.4 40.8l77.7-77.7C405 24.6 339.7-.8 272.1 0 169.2 0 75.1 58 28.9 150l90.4 70.1c21.5-64.5 81.8-112.4 152.8-112.4z"
-              fill="#ea4335"
-            />
-          </svg>
-            <span> Register using Google </span>
-          </a>
+ 
+
+
+
+
+
+
+
+          <div class="myown">
+            <div class="myown2">
+              <a href="" style="width: 100%;" class=" flex items-center justify-center text-gray-900 px-4 py-2 space-x-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2">
+                <svg class="h-5 mr-2 -ml-1 w-10"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="96" height="96"
+                viewBox="0 0 48 48"
+                style=" fill:#000000;"><path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path></svg>
+                Login With Google
+              </a> 
+            </div>
+            <!-- ... -->
+            <div class="myown2">
+              <a href=""  type="button" style="width: 100%;" class=" flex items-center justify-center px-4 py-2 space-x-2 text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2">
+          
+                <svg class="h-5 mr-2 -ml-1 w-10" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="48" height="48"
+                viewBox="0 0 48 48"
+                style=" fill:#000000;"><path fill="#3F51B5" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path><path fill="#FFF" d="M34.368,25H31v13h-5V25h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H35v4h-2.287C31.104,17,31,17.6,31,18.723V21h4L34.368,25z"></path></svg>
+    
+                Login With Facebook
+              </a>
+            </div>
+          </div>
+
+          <div class="myown">
+            <div class="myown2">
+              <a href="" style="width: 100%;" class=" flex items-center justify-center px-4 py-2 space-x-2 text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2">
+                <svg class="h-5 mr-2 -ml-1 w-10" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="100" height="100"
+                viewBox="0 0 50 50"
+                style=" fill:#000000;"><path d="M 46.792969 22.089844 L 27.910156 3.207031 C 27.109375 2.402344 26.054688 2 25 2 C 23.945313 2 22.890625 2.402344 22.089844 3.207031 L 18.355469 6.941406 L 22.976563 11.5625 C 24.511719 10.660156 26.511719 10.855469 27.828125 12.171875 C 29.144531 13.488281 29.335938 15.488281 28.433594 17.019531 L 32.976563 21.5625 C 34.511719 20.660156 36.511719 20.855469 37.828125 22.171875 C 39.390625 23.734375 39.390625 26.265625 37.828125 27.828125 C 36.265625 29.390625 33.734375 29.390625 32.171875 27.828125 C 30.855469 26.511719 30.660156 24.511719 31.5625 22.976563 L 27.019531 18.433594 C 26.695313 18.625 26.355469 18.765625 26 18.855469 L 26 31.140625 C 27.722656 31.585938 29 33.136719 29 35 C 29 37.210938 27.210938 39 25 39 C 22.789063 39 21 37.210938 21 35 C 21 33.136719 22.277344 31.585938 24 31.140625 L 24 18.855469 C 23.332031 18.683594 22.695313 18.351563 22.171875 17.828125 C 20.855469 16.511719 20.664063 14.511719 21.566406 12.980469 L 16.941406 8.355469 L 3.207031 22.089844 C 1.597656 23.695313 1.597656 26.304688 3.207031 27.910156 L 22.089844 46.792969 C 22.890625 47.597656 23.945313 48 25 48 C 26.054688 48 27.109375 47.597656 27.910156 46.792969 L 46.792969 27.910156 C 48.402344 26.304688 48.402344 23.695313 46.792969 22.089844 Z"></path></svg>
+                Login With Github
+              </a>
+            </div>
+            <!-- ... -->
+            <div class="myown2">
+              <a href="" style="width: 100%;" class=" flex items-center justify-center px-4 py-2 space-x-2 text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2">
+                <svg class="h-5 mr-2 -ml-1 w-10" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="100" height="100"
+                viewBox="0 0 48 48"
+                style=" fill:#000000;"><linearGradient id="q17mbB32E_FbIzPpfjq_Ta_W0YEwBDDfTeu_gr1" x1="16.309" x2="23.023" y1="1.101" y2="19.546" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f44f5a"></stop><stop offset=".443" stop-color="#ee3d4a"></stop><stop offset="1" stop-color="#e52030"></stop></linearGradient><path fill="url(#q17mbB32E_FbIzPpfjq_Ta_W0YEwBDDfTeu_gr1)" d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"></path><linearGradient id="q17mbB32E_FbIzPpfjq_Tb_W0YEwBDDfTeu_gr2" x1="15.64" x2="22.314" y1="14.636" y2="32.971" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ae4cd5"></stop><stop offset="1" stop-color="#9331bf"></stop></linearGradient><path fill="url(#q17mbB32E_FbIzPpfjq_Tb_W0YEwBDDfTeu_gr2)" d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"></path><linearGradient id="q17mbB32E_FbIzPpfjq_Tc_W0YEwBDDfTeu_gr3" x1="14.81" x2="21.821" y1="26.357" y2="45.617" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#33c481"></stop><stop offset="1" stop-color="#21a366"></stop></linearGradient><path fill="url(#q17mbB32E_FbIzPpfjq_Tc_W0YEwBDDfTeu_gr3)" d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z"></path><linearGradient id="q17mbB32E_FbIzPpfjq_Td_W0YEwBDDfTeu_gr4" x1="27.498" x2="34.119" y1=".512" y2="18.702" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f09ca2"></stop><stop offset="1" stop-color="#eb6773"></stop></linearGradient><path fill="url(#q17mbB32E_FbIzPpfjq_Td_W0YEwBDDfTeu_gr4)" d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z"></path><linearGradient id="q17mbB32E_FbIzPpfjq_Te_W0YEwBDDfTeu_gr5" x1="28.714" x2="34.857" y1="14.972" y2="31.85" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#32bdef"></stop><stop offset="1" stop-color="#1ea2e4"></stop></linearGradient><circle cx="32" cy="24" r="7" fill="url(#q17mbB32E_FbIzPpfjq_Te_W0YEwBDDfTeu_gr5)"></circle></svg>
+                Login With Figma
+              </a>
+    
+            </div>
+          </div>
 
             <!-- Register link -->
             <div class="text-sm text-gray-600 dark:text-gray-400">

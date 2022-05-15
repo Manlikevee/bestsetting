@@ -38,12 +38,15 @@
                         UI / UX Designer
                     </div>
                 
-                    <div class="cardsubtitle" id='displayBox4'>
+                    <div class="cardsubtitle" id='displayBox8'>
                         The User Experience Designer position exists to create compelling and digital user experience through excellent design...
                     </div>
                 
     <div class="mytags">
-        <button class="search-buttons detail-button" id='displayBox3'>Front-End</button>
+        <button class="search-buttons detail-button">
+            <div id="Frontend" class="inv">Frontend</div>
+            <div id="Backend" class="inv">Backend</div>
+        </button>
         <!-- <button class="search-buttons detail-button">Backend</button> -->
     </div>
     
@@ -57,8 +60,11 @@
 
             
         </div>
+        
         <div class="box-col box-product-payment">
+            
             <div class="content">
+                <form action="" method="get">
                 <div class="form-group">
                     <div class="label-text">Email</div>
                     <input type="text" class="form-control" id='inputBox' data-keyuptarget="displayBox1">
@@ -132,12 +138,12 @@
 
                 <div class="form-group">
                     <div class="label-text">Name on card</div>
-                    <input type="text" class="form-control">
+                    <input name="ees" type="text" class="form-control">
                 </div>
 
                 <div class="form-group">
                     <div class="label-text">Name on card</div>
-                    <textarea class="simple" id='inputBox' ></textarea>
+                    <textarea name="txt" class="simple" id='inputBox' ></textarea>
                 </div>
 
 
@@ -147,20 +153,19 @@
                     <div class="label-text">Country or region</div>
                     <div class="form-country">
                         <div class="select-custom">
-                            <select name="" id="" class="form-control">
-                                <option value="">Viet Nam</option>
-                                <option value="">US</option>
-                                <option value="">English</option>
-                                <option value="">Thai lan</option>
+                            <select name="dl" id="target" class="form-control" datatarget="displayBox6" >
+                                <option value="Frontend">Frontend</option>
+                                <option value="Backend">Backend</option>
                                 <option value="">...</option>
                             </select>
                         </div>
-                        <input type="text" class="form-control" placeholder="zip">
+                        <input type="text" class="form-control" placeholder="zip" >
                     </div>
                 </div>
                 <div class="actions">
-                    <button class="btn btn-main">Pay $65.00</button>
+                    <button type="submit" class="btn btn-main">Pay $65.00</button>
                 </div>
+            </form>
             </div>
         </div>
         <div class="footer">
@@ -195,19 +200,19 @@
   </script>
 
 <script type="text/javascript">
-    function listeners(target){
-      return function(e){target.innerHTML = e.target.value};
+document
+  .getElementById('target')
+  .addEventListener('change', function () {
+    'use strict';
+    var vis = document.querySelector('.vis'),   
+      target = document.getElementById(this.value);
+    if (vis !== null) {
+      vis.className = 'inv';
     }
-    
-    function inits(){
-      var elemsa = document.querySelectorAll("textarea[data-keyuptarget]");
-      for(var elemx of elemsa){
-        var target = document.getElementById(elemx.getAttribute('data-keyuptarget'));
-        if (target) elemx.onkeyup = listeners(target);
-       }
-     }
-    
-    inits();
+    if (target !== null ) {
+      target.className = 'vis';
+    }
+});
    
   </script>
 

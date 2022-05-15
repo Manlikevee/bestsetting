@@ -10,7 +10,9 @@ html, body {
   font-size: 14px;
   height: 100%;
   font-family: 'Poppins', sans-serif; }
-
+  .inv {
+    display: none;
+}
 .form-control {
   border: 1px solid #e0e0e0;
   width: 100%;
