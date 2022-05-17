@@ -282,3 +282,135 @@ line-height: normal;
     border-radius: 10px;
     margin-bottom: 30px;
 }
+.containing {
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    /* display: flex;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 30px;
+  }
+  
+  .cards {
+    width: 100%;
+    border-radius: 1rem;
+    background: white;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    color: #434343;
+  }
+  
+  .cards .card__container {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 1rem;
+    position: relative;
+  }
+  
+  .cards .card__header {
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+  }
+  
+  .cards .card__body {
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      color: #333;
+  }
+  
+  .cards::before {
+    position: absolute;
+    top: 2rem;
+    right: -0.5rem;
+    content: "";
+    background: #283593;
+    height: 28px;
+    width: 28px;
+    transform: rotate(45deg);
+  }
+  
+  .cards::after {
+    position: absolute;
+    content: attr(data-label);
+    top: 11px;
+    right: -14px;
+    padding: 0.5rem;
+    width: 10rem;
+    background: #3949ab;
+    color: white;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
+  }
+  
+  .datee{
+    float: right;
+    width: fit-content;
+    padding: 5px;
+    margin-top: 42px;
+    font-size: 12px;
+    font-weight: 300;
+    background-color: #b8daff;
+    color: #004085;
+    border-radius: 10px;
+  }
+
+  .stickycards {
+    width: 95%;
+    padding: 10px;
+    margin: auto;
+    height: 100%;
+    display: grid;
+    /* align-items: center; */
+    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+    grid-template-rows: 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 14px;
+  }
+  
+  .div {
+    max-width: 100%;
+    position: relative;
+    background: #FFFD75;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(19, 19, 19);
+  
+  
+    font-family: "Gloria Hallelujah", cursive;
+    padding: 20px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+         box-shadow: 0 10px 6px -13px #777;
+  }
+  .div:before, .div:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  .div:before {
+    bottom: 0;
+    right: 0;
+    border-width: 20px 20px 0 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.1) transparent;
+  }
+  .div:after {
+    bottom: 0;
+    right: 0;
+    border-width: 0 0 20px 20px;
+    border-style: solid;
+    border-color: #fff transparent;
+  }
+  
+  
+  
+  
+  
