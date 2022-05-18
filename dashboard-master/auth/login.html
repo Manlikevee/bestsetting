@@ -19,8 +19,10 @@ body{
 font-family: "Poppins", sans-serif;
 }
 .max-w-sm {
-    max-width: 32rem !important;
+    max-width: 31rem !important;
 }
+
+
 
 .bg-blue-500{
   background-color:rgb(37 99 235)!important;
@@ -38,26 +40,19 @@ font-family: "Poppins", sans-serif;
 }
 
 .myown{
-  display:flex;
-   gap: 10px; 
-  flex-wrap: no-wrap;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin: 0 !important;
+  padding-top: 20px;
 }
 
-
-.myown2{
-  width: 50%;
-}
-@media (max-width: 770px) {
-  .myown{
-  display:flex;
-  flex-direction: column;
-   gap: 2px; 
-  flex-wrap: no-wrap;
-}
 
 .myown2{
   width: 100%;
-}
+  margin: 0 !important;
+  margin-top: 4px;
 }
 
 
@@ -163,17 +158,17 @@ font-family: "Poppins", sans-serif;
 
           <div class="myown">
             <div class="myown2">
-              <a href="" style="width: 100%;" class=" flex items-center justify-center text-gray-900 px-4 py-2 space-x-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2">
+              <button style="width: 100%;" class=" flex items-center justify-center text-gray-900 px-4 py-2 space-x-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2">
                 <svg class="h-5 mr-2 -ml-1 w-10"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                 width="96" height="96"
                 viewBox="0 0 48 48"
                 style=" fill:#000000;"><path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path></svg>
                 Login With Google
-              </a> 
+              </button> 
             </div>
             <!-- ... -->
             <div class="myown2">
-              <a href=""  type="button" style="width: 100%;" class=" flex items-center justify-center px-4 py-2 space-x-2 text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2">
+              <button  type="button" style="width: 100%;" class=" flex items-center justify-center px-4 py-2 space-x-2 text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2">
           
                 <svg class="h-5 mr-2 -ml-1 w-10" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                 width="48" height="48"
@@ -181,32 +176,30 @@ font-family: "Poppins", sans-serif;
                 style=" fill:#000000;"><path fill="#3F51B5" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path><path fill="#FFF" d="M34.368,25H31v13h-5V25h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H35v4h-2.287C31.104,17,31,17.6,31,18.723V21h4L34.368,25z"></path></svg>
     
                 Login With Facebook
-              </a>
+              </button>
             </div>
-          </div>
-
-          <div class="myown">
             <div class="myown2">
-              <a href="" style="width: 100%;" class=" flex items-center justify-center px-4 py-2 space-x-2 text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2">
+              <button style="width: 100%;" class=" flex items-center justify-center px-4 py-2 space-x-2 text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2">
                 <svg class="h-5 mr-2 -ml-1 w-10" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                 width="100" height="100"
                 viewBox="0 0 50 50"
                 style=" fill:#000000;"><path d="M 46.792969 22.089844 L 27.910156 3.207031 C 27.109375 2.402344 26.054688 2 25 2 C 23.945313 2 22.890625 2.402344 22.089844 3.207031 L 18.355469 6.941406 L 22.976563 11.5625 C 24.511719 10.660156 26.511719 10.855469 27.828125 12.171875 C 29.144531 13.488281 29.335938 15.488281 28.433594 17.019531 L 32.976563 21.5625 C 34.511719 20.660156 36.511719 20.855469 37.828125 22.171875 C 39.390625 23.734375 39.390625 26.265625 37.828125 27.828125 C 36.265625 29.390625 33.734375 29.390625 32.171875 27.828125 C 30.855469 26.511719 30.660156 24.511719 31.5625 22.976563 L 27.019531 18.433594 C 26.695313 18.625 26.355469 18.765625 26 18.855469 L 26 31.140625 C 27.722656 31.585938 29 33.136719 29 35 C 29 37.210938 27.210938 39 25 39 C 22.789063 39 21 37.210938 21 35 C 21 33.136719 22.277344 31.585938 24 31.140625 L 24 18.855469 C 23.332031 18.683594 22.695313 18.351563 22.171875 17.828125 C 20.855469 16.511719 20.664063 14.511719 21.566406 12.980469 L 16.941406 8.355469 L 3.207031 22.089844 C 1.597656 23.695313 1.597656 26.304688 3.207031 27.910156 L 22.089844 46.792969 C 22.890625 47.597656 23.945313 48 25 48 C 26.054688 48 27.109375 47.597656 27.910156 46.792969 L 46.792969 27.910156 C 48.402344 26.304688 48.402344 23.695313 46.792969 22.089844 Z"></path></svg>
                 Login With Github
-              </a>
+              </button>
             </div>
             <!-- ... -->
             <div class="myown2">
-              <a href="" style="width: 100%;" class=" flex items-center justify-center px-4 py-2 space-x-2 text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2">
+              <button style="width: 100%;" class=" flex items-center justify-center px-4 py-2 space-x-2 text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2">
                 <svg class="h-5 mr-2 -ml-1 w-10" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                 width="100" height="100"
                 viewBox="0 0 48 48"
                 style=" fill:#000000;"><linearGradient id="q17mbB32E_FbIzPpfjq_Ta_W0YEwBDDfTeu_gr1" x1="16.309" x2="23.023" y1="1.101" y2="19.546" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f44f5a"></stop><stop offset=".443" stop-color="#ee3d4a"></stop><stop offset="1" stop-color="#e52030"></stop></linearGradient><path fill="url(#q17mbB32E_FbIzPpfjq_Ta_W0YEwBDDfTeu_gr1)" d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"></path><linearGradient id="q17mbB32E_FbIzPpfjq_Tb_W0YEwBDDfTeu_gr2" x1="15.64" x2="22.314" y1="14.636" y2="32.971" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ae4cd5"></stop><stop offset="1" stop-color="#9331bf"></stop></linearGradient><path fill="url(#q17mbB32E_FbIzPpfjq_Tb_W0YEwBDDfTeu_gr2)" d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"></path><linearGradient id="q17mbB32E_FbIzPpfjq_Tc_W0YEwBDDfTeu_gr3" x1="14.81" x2="21.821" y1="26.357" y2="45.617" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#33c481"></stop><stop offset="1" stop-color="#21a366"></stop></linearGradient><path fill="url(#q17mbB32E_FbIzPpfjq_Tc_W0YEwBDDfTeu_gr3)" d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z"></path><linearGradient id="q17mbB32E_FbIzPpfjq_Td_W0YEwBDDfTeu_gr4" x1="27.498" x2="34.119" y1=".512" y2="18.702" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f09ca2"></stop><stop offset="1" stop-color="#eb6773"></stop></linearGradient><path fill="url(#q17mbB32E_FbIzPpfjq_Td_W0YEwBDDfTeu_gr4)" d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z"></path><linearGradient id="q17mbB32E_FbIzPpfjq_Te_W0YEwBDDfTeu_gr5" x1="28.714" x2="34.857" y1="14.972" y2="31.85" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#32bdef"></stop><stop offset="1" stop-color="#1ea2e4"></stop></linearGradient><circle cx="32" cy="24" r="7" fill="url(#q17mbB32E_FbIzPpfjq_Te_W0YEwBDDfTeu_gr5)"></circle></svg>
                 Login With Figma
-              </a>
+              </button>
     
             </div>
           </div>
+
 
             <!-- Register link -->
             <div class="text-sm text-gray-600 dark:text-gray-400">

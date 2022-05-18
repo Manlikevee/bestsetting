@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e6e5e5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.loginbox{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    font-weight: 400;
+}
+
+.tst{
+    display: flex;
+    gap: 6px;
+}
+
+.myown{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    height: auto;
+}
+
+.myown2{
+    display: flex;
+    width: 200px;
+    height: auto !important;
+}
+.myown svg{
+  width:2.5rem ; 
+  height: 1.25rem; 
+}
+
+
+.loginform{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    width: 400px;
+    padding: 40px;
+    border-radius: 20px;
+    height: auto;
+}
+
+.inputcont{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+input{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
