@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="table.css">
   <link rel="stylesheet" href="form.css">
-
+<link rel="stylesheet" href="style.css">
   <!-- 
     - google font link
   -->
@@ -42,6 +42,12 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     rel="stylesheet" />
     <!-- <link rel="stylesheet" href="profound.css"> -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/css/intlTelInput.css" rel="stylesheet" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js"></script>
 
 </head>
 
@@ -137,6 +143,10 @@ input:-webkit-autofill:active  {
 .site-section {
     margin-top: 50px;
 }
+    }
+
+    label{
+      margin-bottom: 9px;
     }
   </style>
 
@@ -276,19 +286,23 @@ input:-webkit-autofill:active  {
               <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
             </div>
             <div class="form-group col-md-6">
-              <label for="job-type">Job Type</label>
+              <label for="job-type">Stack</label>
               <select name="job_type" class="selectpicker border rounded" id="job-type" data-style="btn-black" data-width="100%" data-live-search="true" title="Select Job Type">
-                    <option value="1">Full time</option>
-                    <option value="2">Part time</option>
-                    <option value="3" >Internship</option>
+                <option value="2">Backend</option>
+                <option value="2">Figma</option>    
+                <option value="1">Frontend</option>
+                  <option value="3">Application Testing</option>
+                  <option value="4" >Intern</option>
               </select>
               </div>
           </div>
 
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="inputEmail4">Email</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              <label for="inputEmail4">Phone Number</label>
+              <input id="phone" type="tel" name="victor" class="form-control">
+              <span id="valid-msg" class="hide">Valid</span>
+              <span id="error-msg" class="hide">Invalid number</span>
             </div>
             <div class="form-group col-md-6">
               <label for="job-type">Job Type</label>
@@ -302,8 +316,13 @@ input:-webkit-autofill:active  {
 
    
           <div class="form-group">
-            <label for="inputAddress2">Address 2</label>
+            <label for="inputAddress2">About</label>
             <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="inputAddress2">Address</label>
+            <textarea class="form-control" name="" id="" cols="20" rows="10"></textarea>
           </div>
 
 
@@ -373,7 +392,7 @@ input:-webkit-autofill:active  {
   <!-- 
     - custom js link
   -->
-
+<script src="mysrc.js"></script>
   <script src="static/js/jquery.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -390,21 +409,9 @@ input:-webkit-autofill:active  {
   <script src="static/js/bootstrap-datepicker.js"></script>
   <script src="static/js/bootstrap-select.min.js"></script>
           
-  <script src="static/js/sweet-alert.js"></script>
-  <script src="static/js/sweet-alert-ajax.js"></script>
-  <script src="./assets/js/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap4.min.js"></script>
-  <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
-  <script src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap4.min.js"></script>
 
-  <script src="imagepref2.js"></script>
-  <script>
-    $(document).ready(function() {
-        $('#example').DataTable();
-    } );
-    </script>
+
+
 
 
 </body>

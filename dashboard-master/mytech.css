@@ -609,3 +609,32 @@ svg:not(:root) {
 .job-overview-buttons .search-buttons.time-button {
   border-radius: 5px ;
 }
+
+.attachcontainer{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.attachflex{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #999;
+  border-radius: 6px;
+  background-color: #f3f3f3;
+  color: #434343;
+  width: 260px;
+  height: 50px;
+  gap: 7px;
+}
+
+.attachflex img{
+  height: 25px;
+  width: 25px;
+}

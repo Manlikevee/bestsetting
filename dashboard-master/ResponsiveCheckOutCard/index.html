@@ -67,16 +67,25 @@
         <div class="box-col box-product-payment">
             
             <div class="content">
-                <form action="" method="get">
+                <form action="" method="post">
+
+                    <div class="select-custom">
+                        <select name="author" id="target" class="form-control"  >
+                            <option value=" {{request.user.id}} "> {{request.user}} </option>
+                        </select>
+                    </div>
+     
+
                 <div class="form-group">
-                    <div class="label-text">Email</div>
-                    <input type="text" class="form-control" id='inputBox' data-keyuptarget="displayBox1">
+                    <div class="label-text">Title</div>
+                    <input type="text" class="form-control" id='inputBox' name="title" data-keyuptarget="displayBox1">
                 </div>
+                
                 <div class="form-group">
                     <div class="label-text">Country or region</div>
                     <div class="form-control form-card">
                         <div class="top">
-                            <input type="text" id='inputBox' class="form-control" data-keyuptarget="displayBox2">
+                
                             <div class="typecard">
                                 <span class="icon">
                                     <img src="images/visa.svg" alt="">
@@ -93,6 +102,7 @@
                             </div>
                         </div>
                         <div class="bottom">
+                            
                             <div class="date">
                                 <input type="text" class="form-control" placeholder="MM / YY">
                             </div>
@@ -107,46 +117,32 @@
                 </div>
 
                 <div class="form-group">
-                    <div class="label-text">Country or region</div>
+                    <div class="label-text">Start And End date</div>
                     <div class="form-control form-card">
-                        <div class="top">
-                            <input type="text" class="form-control" id='inputBox' data-keyuptarget="displayBox3">
-                            <div class="typecard">
-                                <span class="icon">
-                                    <img src="images/visa.svg" alt="">
-                                </span>
-                                <span class="icon">
-                                    <img src="images/mastercard.svg" alt="">
-                                </span>
-                                <span class="icon">
-                                    <img src="images/ae.svg" alt="">
-                                </span>
-                                <span class="icon">
-                                    <img src="images/discover.svg" alt="">
-                                </span>
-                            </div>
-                        </div>
                         <div class="bottom">
                             <div class="date">
-                                <input type="date" class="form-control" placeholder="MM / YY">
+                                <input type="date" class="form-control" placeholder="MM / YY" name="datecreated">
                                 
                             </div>
                             <div class="cvc">
-                                <input type="date" placeholder="CVC" class="form-control">
+                                <input type="date" placeholder="CVC" class="form-control" name="deadline">
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <div class="form-group">
+                    <div class="label-text">Figma Url</div>
+                    <input type="text" id='inputBox' class="form-control" data-keyuptarget="displayBox2" name="figmalink">
+                </div>
 
                 <div class="form-group">
-                    <div class="label-text">Name on card</div>
+                    <div class="label-text">Other-Link</div>
                     <input name="ees" type="text" class="form-control">
                 </div>
 
                 <div class="form-group">
                     <div class="label-text">Name on card</div>
-                    <textarea name="txt" class="simple" id='inputBox' ></textarea>
+                    <textarea name="content" class="simple" id='inputBox' ></textarea>
                 </div>
 
 
@@ -162,7 +158,7 @@
                                 <option value="">...</option>
                             </select>
                         </div>
-                        <input type="text" class="form-control" placeholder="zip" >
+                        <input type="text" class="form-control" placeholder="designate to" >
                     </div>
                 </div>
                 <div class="actions">
@@ -182,7 +178,9 @@
     </div>
 
     
-    <script src="https://cdn.tiny.cloud/1/yvyj8411mm5xlp5u4ifefcugcg8cilkni4funda3lwkt4n55/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script><script  src="./script.js"></script>
+    <script src="https://cdn.tiny.cloud/1/yvyj8411mm5xlp5u4ifefcugcg8cilkni4funda3lwkt4n55/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    
+    <script  src="./script.js"></script>
 
     
   <script type="text/javascript">
