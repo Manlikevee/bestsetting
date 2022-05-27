@@ -1,0 +1,493 @@
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&amp;family=Fira+Sans&amp;family=Manrope:wght@200&amp;family=Montserrat:wght@400;600&amp;family=Poppins&amp;family=Roboto:wght@100;300;400;700&amp;display=swap" rel="stylesheet" />
+<p> </p>
+<p> </p>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+                                    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    
+                                    *{
+                                        margin: 0;
+                                        padding: 0;
+                                        box-sizing: border-box;
+                                        font-family: 'Roboto', sans-serif;
+                                    }
+                                    html {
+                                        scroll-behavior: smooth;
+                                      }
+    
+    
+                      ol, ul {
+                    padding-left: 0rem !important;
+                    }
+    
+    
+                                    .pricingsec{
+    
+                                    width: 98%;
+                                    margin: auto;
+                                    margin-top: 2px;
+    
+                                    }
+    
+                                    .pricingheader{
+                                    color: #424243;
+                                    font-family: Roboto;
+                                    font-size: 48px;
+                                    font-weight: 700;
+                                    line-height: 58px;
+                                    letter-spacing: 0em;
+                                    text-align: center;
+    
+    
+                                    }
+    
+                                    .minitext{
+                                        font-family: Inter;
+                                    font-size: 12px;
+                                    font-weight: 300;
+                                    line-height: 1px;
+                                    margin: -10px;
+                                    padding: 0;
+                                    letter-spacing: 0em;
+                                    text-align: center;
+                                    color: #424243;
+    
+                                    }
+    
+                                    .pricingheader span{
+                                    font-family: Inter;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    letter-spacing: 0em;
+                                    text-align: center;
+    
+                                    }
+    
+                                    .pricingcards{
+                                        padding: 70px;
+                                        width: 80%;
+                                        margin: auto;
+                                    }
+    
+                                    .pricingcardscorporate {
+                                        padding: 10px;
+                                        width: 100%;
+                                        margin: auto;
+                                    }
+    
+    
+                                    .pricingcardflex{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        gap: 20px;
+                                    }
+    
+                                    .pcard{
+                                        margin-top: 40px;
+                                        width: 100%;
+                                        box-shadow: 0px 6px 12px 0px #17123F1F;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 35px;
+                                    height: 760px;
+    
+                                    }
+    
+                                    .pricingcardscorporate .pcard{
+    
+                                        height: 910px;
+                                    }
+    
+                                    .cardhead{
+                                    font-family: Roboto;
+                                    font-size: 24px;
+                                    font-weight: 400;
+                                    line-height: 29px;
+                                    letter-spacing: 0em;
+                                    text-align: center;
+                                    color: #A91F2F;
+                                    margin-top: 19px;
+                                    }
+    
+                                    .cardprice{
+                                    color: #424243;
+                                    font-family: Roboto;
+                                    font-size: 32px;
+                                    font-weight: 700;
+                                    line-height: 38px;
+                                    letter-spacing: 0em;
+                                    text-align: center;
+    
+                                    }
+    
+                .cardsubtext {
+                color: #424243;
+                font-family: Inter;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 21px;
+                letter-spacing: 0em;
+                text-align: center;
+                height: 35px;
+                padding: 13px;
+                }
+    
+                                    .mysbbtn{
+                                        padding: 13px;
+                                        width: 200px;
+                                        margin: auto;
+                                        display: flex;
+                                        margin-top: 10px;
+                                        margin-bottom: 10px;
+                                        align-items: center;
+                                        justify-content: center;
+                                        color: white !important;
+                                        background-color: #BD0B20;
+                                        border-radius: 9px;
+                                        text-decoration: none;
+                                        text-align: center;
+                                    }
+    
+                                    .cardlist{
+                                        padding: 12px;
+    
+                                    }
+    
+                                    .cardlist li{
+    
+                                        padding: 10px;
+                                        list-style-type: none !important;
+                                    font-family: Inter;
+                                    font-size: 15px;
+                                    font-weight: 600;
+                                    line-height: 24px;
+                                    letter-spacing: 0em;
+                                    text-align: left;
+                                    color: #424243;
+    
+    
+                                    }
+    
+    
+                                    .cardlist li {
+                                        display: flex;
+                                        gap: 10px;
+                                    }
+    
+    
+                                    .premium{
+                                        border-top: 3px solid #BD0B20;
+                                    }
+    
+    
+                                    .pricingtype{
+                                        display: flex;
+                                        margin-top: 30px;
+                                        text-align: center;
+                                        align-items: center;
+                                        justify-content: center;
+                                    }
+    
+                                    .ptype{
+                                        display: inline-block;
+                                        padding: 13px;
+                                        margin-right: -10px;
+                                        border-radius: 16px;
+                                        background-color: #BD0B20;
+                                        cursor: pointer;
+                                        color: white;
+                                    }
+    
+                                    .ptype2{
+                                        display: inline-block;
+                                        padding: 13px;
+                                        border-radius: 16px;
+                                        cursor: pointer;
+                                        background: rgba(66, 66, 67, 0.1);
+                                        color: #424243;
+                                    }
+    
+                                    @media screen and (max-width: 1280px) {
+                                        .pricingcards {
+                                            padding: 5px;
+                                            width: 95%;
+                                            margin: auto;
+                                        }
+                                      }
+    
+    
+    
+                                    @media screen and (max-width: 1000px) {
+                                        .pricingcardflex {
+                                          flex-direction: column;
+                                        }
+                                      }
+    
+                                    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+                                        color: #fff;
+                                        background-color: #a92f41;
+                                    }
+</style>
+<section class="pricingsec">
+    <div class="pricingheader">Simple, transparent<br /><span> No contracts. No surprise fees. </span></div>
+    <div class="pricingtype">
+        <!-- <a href="index.html"> <div class="ptype">Executive</div></a>
+    <a href=""> <div class="ptype2">Corporate</div></a> -->
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation"><button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Executive</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Corporate</button></li>
+        </ul>
+    </div>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="pricingcards">
+                <div class="pricingcardflex">
+                    <div class="pcard">
+                        <div class="cardhead">Free Trial</div>
+                        <div class="cardprice">Free</div>
+                        <div class="cardsubtext">(Premium features for a 14-30 day period)</div>
+                        <div class="cardsubbtn"><a class="mysbbtn" href=""> Start trial </a></div>
+                        <div class="cardlist">
+                            <ul>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Industry wide Insights &amp; Resources</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>2 Limited Applications per month</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Onboarding Support</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>24hr Tech Support</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>5% off Profile-writing</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Refer a friend</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>2 Free Executive Training</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Discounted Industry -related courses</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pcard premium">
+                        <div class="cardhead">Premium</div>
+                        <div class="cardprice">N 300,000</div>
+                        <div class="cardsubtext">(Premium features for a 14-30 day period)</div>
+                        <div class="cardsubbtn"><a class="mysbbtn" href=""> Choose plan </a></div>
+                        <div class="cardlist">
+                            <ul>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>See Board Roles</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span> Unlimited Applications per month</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Industry wide Insights &amp; Resources</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Onboarding Support</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>24hr Tech Support</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>10% off Profile-writing</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Refer a friend</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>10 Free Executive Training</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Discounted Industry -related courses</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="pricingcardscorporate">
+                <div class="pricingcardflex">
+                    <div class="pcard">
+                        <div class="cardhead">Basic</div>
+                        <p class="minitext">Post One Vacant Role</p>
+                        <div class="cardprice">N 300,000</div>
+                        <div class="cardsubtext">For corporates that need to post a board role to reach our exclusive community of pre-verified board candidates</div>
+                        <div class="cardsubbtn"><a class="mysbbtn" href=""> Choose plan </a></div>
+                        <div class="cardlist">
+                            <p style="text-align: center;
+                       padding: 8px;
+                       font-family: Inter;
+                       font-size: 16px;
+                       font-weight: 400;
+                       line-height: 24px;
+                       letter-spacing: 0em;
+
+                       color: #231d4f;
+                       margin-bottom: 9px;
+                        ">Basic features</p>
+                            <ul>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Book a Consultation</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span> Dedicated Onboarding Support</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>24hr Tech Support</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Industry wide Insights &amp; Resources</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Post 1 Board Roles - Upgrade to post more</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Limited AI matching</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Summarized Candidates details</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pcard">
+                        <div class="cardhead">Premium</div>
+                        <p class="minitext">Fill A Boardseat</p>
+                        <div class="cardprice">N 600,000</div>
+                        <div class="cardsubtext">For corporates that require quicker candidate matching of best-fit executives using our enhanced auto-matching feature</div>
+                        <div class="cardsubbtn"><a class="mysbbtn" href=""> Choose plan </a></div>
+                        <div class="cardlist">
+                            <p style="text-align: center;
+       font-family: Inter;
+       font-size: 16px;
+       font-weight: 400;
+       line-height: 24px;
+       padding: 8px;
+       letter-spacing: 0em;
+       color: #231d4f;
+       margin-bottom: 9px;
+        ">All Basic features plus</p>
+                            <ul>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Discounted ads</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Message Candidates</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Fast &amp; Efficient recruitment</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Post Board Roles</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Candidates Background Check</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pcard">
+                        <div class="cardhead">Enterprise</div>
+                        <p class="minitext">Outsourced Recruitment</p>
+                        <div class="cardprice">Get a quote</div>
+                        <div class="cardsubtext">For corporates that require our expertise to manage the entire recruitment process</div>
+                        <div class="cardsubbtn"><a class="mysbbtn" href="https://outlook.office365.com/owa/calendar/BoardSeats1@risktechadvisory.com/bookings/s/dVpm5LZ1IkGQXrIFtbYRLg2"> Book a consultation </a></div>
+                        <div class="cardlist">
+                            <p style="text-align: center;
+       font-family: Inter;
+       font-size: 16px;
+       font-weight: 400;
+       line-height: 24px;
+       padding: 8px;
+       letter-spacing: 0em;
+       color: #231d4f;
+       margin-bottom: 9px;
+        ">All Premium features plus</p>
+                            <ul>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Featured Adverts on high traffic pages on our website</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Totally managed recruitment process</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>100% Board Recruitment Execution</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Psychometric Tests</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Post unlimited board Roles</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Competency Based Assessment</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Executive Leadership Assessments</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pcard premium">
+                        <div class="cardhead">Enterprise Pro</div>
+                        <p class="minitext">Set-up a Board</p>
+                        <div class="cardprice">Get a quote</div>
+                        <div class="cardsubtext">For corporates that require our expertise to setup a board from ground up</div>
+                        <div class="cardsubbtn"><a class="mysbbtn" href="https://outlook.office365.com/owa/calendar/BoardSeats1@risktechadvisory.com/bookings/s/dVpm5LZ1IkGQXrIFtbYRLg2"> Book a consultation </a></div>
+                        <div class="cardlist">
+                            <p style="text-align: center;
+       font-family: Inter;
+       font-size: 16px;
+       font-weight: 400;
+       padding: 8px;
+       line-height: 24px;
+       letter-spacing: 0em;
+       color: #231d4f;
+       margin-bottom: 9px;
+        ">All Premium features plus</p>
+                            <ul>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Featured Adverts on high traffic pages on our website</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Dedicated Corporate Governance Support</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>10% discount to use required features of the Digitral Cosec</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Psychometric Tests</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Competency Based Assessment</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Executive Leadership Assessments</li>
+                                <li><span> <svg width="20" height="11" viewbox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.472656 6.52158L5.21566 10.1416L12.8317 1.43758L11.3257 0.121582L4.94166 7.41758L1.68466 4.93158L0.472656 6.52158ZM19.8317 1.43758L18.3257 0.121582L11.9567 7.40058L11.2037 6.79858L9.95366 8.36058L12.2007 10.1586L19.8317 1.43758Z" fill="#A91F2F"></path>
+                                        </svg></span>Corporate Governance Training</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

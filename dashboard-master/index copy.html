@@ -47,6 +47,23 @@ a{
   text-decoration: none !important;
 
 }
+
+.addbutton{
+  font-size: 30px;
+  font-weight: 300;
+
+}
+
+.okk{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.okk a{
+  font-size: 22px;
+  color: #a92f41;
+}
   </style>
 
   <div id="overlayer"></div>
@@ -202,7 +219,8 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, accusantium. 
                 <div class="anotherflex">
                   <div class="whitecolor">
                     <div class="card-bodys">
-                      <h2 class="c">About Me</h2>
+                      <div class="okk">  <h2 class="c">About Me</h2> <div class="iconxx" style="display: flex; margin-right: 10px; gap: 10px;"> <a href=""><ion-icon name="create-outline"></ion-icon></a>   </div> </div>
+                     <br>
                       <p class="card-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus,
                         quos consequatur dolore itaque rem dolor maiores qui quidem
@@ -226,16 +244,21 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, accusantium. 
                     </div>
                   </div>
           
+                  <div class="headarea" style="width: 100%; margin-bottom: -7px;  margin-top: 20px; background-color: white; padding: 10px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;">
+                    <div class="headingtxt"><h2 class="carx">Projects </h2></div> <div class="addbutton" style="float: right;"><a href=""><ion-icon name="add-circle-outline"></ion-icon></a></div>
+                   </div>
                   <div class="whitecolor">
+   
                     <div class="projectbody">
-                      <h2 class="">Projects</h2>
+              <h2 class="">Projects</h2>
                       <div>
                         <div class="disposs">
                           <div class="col-md-4 mb-4 mb-md-0 mb-auto">
                             <img src="https://raw.githubusercontent.com/neeraj15022001/bootstrap-resume/master/logo.png" alt="logo" class="img-fluid bg-secondary rounded" />
                           </div>
                           <div class="col-md-8">
-                            <p class="fs-2 fw-bolder text-dark">Project 1</p>
+                            <div class="okk">  <p class="fs-2 fw-bolder text-dark">Project 1</p> <div class="iconxx" style="display: flex; margin-right: 10px; gap: 10px;"> <a href=""><ion-icon name="create-outline"></ion-icon></a> <a href=""><ion-icon name="trash-outline"></ion-icon> </a>  </div> </div>
+                           
                             <p>
                               Lorem ipsum dolor sit amet consectetur adipisicing elit.
                               Officia fuga corrupti, eligendi quam odit, laudantium
@@ -257,9 +280,13 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, accusantium. 
                     </div>
                   </div>
           
+                  <div class="headarea" style="width: 100%; margin-bottom: -7px;  margin-top: 20px; background-color: white; padding: 10px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;">
+                   <div class="headingtxt"><h2 class="carx">Work Experience  </h2></div> <div class="addbutton" style="float: right;"><a href=""><ion-icon name="add-circle-outline"></ion-icon></a></div>
+                  </div>
+
                   <div class="whitecolor border-0 rounded shadow-sm p-3 mb-3">
                     <div class="projectbodys">
-                      <h2 class="carx">Work Experience</h2>
+                     <div class="okk"> <h2 class="carx">Work Experience  </h2>  <div class="iconxx" style="display: flex; margin-right: 10px; gap: 10px;"> <a href=""><ion-icon name="create-outline"></ion-icon></a> <a href=""><ion-icon name="trash-outline"></ion-icon> </a>  </div> </div>
                       <div class="ods">
                         <p>
                           <span class="fw-bold text-secondary fs-5">Founder and Lead Developer</span><span class="text-muted">- Project 1</span>
@@ -278,6 +305,7 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, accusantium. 
                     </div>
                     <hr class="my-3" />
                   </div>
+                  
                 </div>
                 <div class="general">
                   <div class="whitecolor">
@@ -323,6 +351,9 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, accusantium. 
                     </div>
                   </div>
                   <div class="whitecolor">
+                    <div class="headarea" style="width: 100%; margin-bottom: 0px; background-color: white; padding: 2px;  justify-content: space-between; align-items: center;">
+                      <div class="addbutton" style="float: right;"><a href=""><ion-icon name="add-circle-outline"></ion-icon></a></div>
+                     </div>
                     <div class="car">
                       <h2 class="card-title fs-3 fw-bold mb-4">Education</h2>
                       <div class="iconflex">
@@ -337,6 +368,9 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, accusantium. 
                     </div>
                   </div>
                   <div class="whitecolor">
+                    <div class="headarea" style="width: 100%; margin-bottom: 0px; background-color: white; padding: 2px;  justify-content: space-between; align-items: center;">
+                      <div class="addbutton" style="float: right;"><a href=""><ion-icon name="add-circle-outline"></ion-icon></a></div>
+                     </div>
                     <div class="c">
                       <h2 class="card-title fs-3 fw-bold mb-4">Languages</h2>
                       <div class="">
@@ -801,7 +835,8 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, accusantium. 
   <!-- 
     - custom js link
   -->
-
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="static/js/jquery.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
