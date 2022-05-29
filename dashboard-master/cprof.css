@@ -551,3 +551,11 @@ line-height: normal;
       height: auto;
     }
   }
+  .col-md-4 {
+    width: fit-content;
+    height: 100px;
+  }
+
+  .col-md-8{
+    width: 100%;
+  }

@@ -64,6 +64,34 @@ a{
   font-size: 22px;
   color: #a92f41;
 }
+
+.flexdoc{
+  width: 100%;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: auto;
+  padding: 10px;
+}
+
+.doc{
+  display: flex;
+  flex-direction: column;
+  width:55px;
+  height: 55px;
+  gap: 5px;
+  
+}
+.doc span{
+  font-size: small;
+}
+
+.doc img{
+  width: 100%;
+  height: 100%;
+}
   </style>
 
   <div id="overlayer"></div>
@@ -219,29 +247,115 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, accusantium. 
                 <div class="anotherflex">
                   <div class="whitecolor">
                     <div class="card-bodys">
-                      <div class="okk">  <h2 class="c">About Me</h2> <div class="iconxx" style="display: flex; margin-right: 10px; gap: 10px;"> <a href=""><ion-icon name="create-outline"></ion-icon></a>   </div> </div>
+                      <div class="okk">  <h2 class="c">Documents</h2> <div class="iconxx" style="display: flex; margin-right: 10px; gap: 10px;"> <a href=""><ion-icon name="create-outline"></ion-icon></a>   </div> </div>
                      <br>
-                      <p class="card-text">
- {{user.profile.about}}
-                      </p>
+
+                    <div class="flexdoc">
+                      <a href="" class="doc">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" alt="">
+                       <span>
+                        testament 
+                       </span>
+                      </a>
+
+                      <a href="" class="doc">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" alt="">
+                       <span>
+                        testament 
+                       </span>
+                      </a>
+
+                      <a href="" class="doc">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" alt="">
+                       <span>
+                        testament 
+                       </span>
+                      </a>
+
+                      <a href="" class="doc">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" alt="">
+                       <span>
+                        testament 
+                       </span>
+                      </a>
+
+                      <a href="" class="doc">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" alt="">
+                       <span>
+                        testament 
+                       </span>
+                      </a>
+
+                      <a href="" class="doc">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" alt="">
+                       <span>
+                        testament 
+                       </span>
+                      </a>
+
+                      <a href="" class="doc">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" alt="">
+                       <span>
+                        testament 
+                       </span>
+                      </a>
+
+                      <a href="" class="doc">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" alt="">
+                       <span>
+                        testament 
+                       </span>
+                      </a>
+
+                      <a href="" class="doc">
+                        <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="">
+                       <span>
+                        testament 
+                       </span>
+                      </a>
+
+                      <a href="" class="doc">
+                        <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="">
+                       <span>
+                        testament 
+                       </span>
+                      </a>
+
+                      <a href="" class="doc">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" alt="">
+                       <span>
+                        testament 
+                       </span>
+                      </a>
+
+                      <a href="" class="doc">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" alt="">
+                       <span>
+                        testament 
+                       </span>
+                      </a>
+
+                      
+                    </div>
+
                     </div>
                   </div>
           
                   <div class="headarea" style="width: 100%; margin-bottom: -7px;  margin-top: 20px; background-color: white; padding: 10px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;">
-                    <div class="headingtxt"><h2 class="carx">Projects </h2></div> <div class="addbutton" style="float: right;"><a href=""><ion-icon name="add-circle-outline"></ion-icon></a></div>
+                    <div class="headingtxt"><h2 class="carx">About Company </h2></div> <div class="addbutton" style="float: right;"><a href=""><ion-icon name="add-circle-outline"></ion-icon></a></div>
                    </div>
 {%for c in ccc %}
                   <div class="whitecolor">
    
                     <div class="projectbody">
-              <h2 class="">Projects</h2>
+              <h2 class="">Company Name</h2>
                       <div>
                         <div class="disposs">
                           <div class="col-md-4 mb-4 mb-md-0 mb-auto">
                             <img src="https://raw.githubusercontent.com/neeraj15022001/bootstrap-resume/master/logo.png" alt="logo" class="img-fluid bg-secondary rounded" />
                           </div>
                           <div class="col-md-8">
-                            <div class="okk">  <p class="fs-2 fw-bolder text-dark">{{c.company_name}}</p> <div class="iconxx" style="display: flex; margin-right: 10px; gap: 10px;"> <a href="index copy 2.html"><ion-icon name="create-outline"></ion-icon></a> <a href=""><ion-icon name="trash-outline"></ion-icon> </a>  </div> </div>
+                            <div class="okk">  <p class="fs-2 fw-bolder text-dark">{{c.company_name}}</p> <div class="iconxx" style="display: flex; margin-right: 10px; gap: 10px;"> <a href=""><ion-icon name="create-outline"></ion-icon></a> <a href=""><ion-icon name="trash-outline"></ion-icon> </a>  </div> </div>
                            
                             <p>
 {{c.company_about}}
@@ -306,7 +420,7 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, accusantium. 
                   </div>
                   <div class="whitecolor">
                     <div class="cardinf">
-                      <h2 class="car">Testimonial</h2>
+                      <h2 class="car">Contributors</h2>
                       <div class="mb-5">
                         <div>
                           <div class="border-start border-5 border-primary ps-4">
