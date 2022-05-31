@@ -24,6 +24,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;900&display=swap"
     rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/LikaloLLC/tourguide.js@0.2.0/tourguide.css'>
+
 
   <!-- 
     - material icon link
@@ -149,7 +151,7 @@
   <main>
 
 <div>Search Role</div>
-    <div class="explain-bar">
+    <div class="explain-bar"  data-tour="step: 1; title: Your cart; content: Example cart description text displays cart description wassapppp">
       <div class="explain-contents fullwid">
       <div class="explain-title"><input class="form-control" type="text" placeholder="Search Job"></div>
        </div>
@@ -174,10 +176,13 @@
 
 
      </div>
+     <button class="btn btn-success btn-lg btn-block" id="tourbutton">
+      Start tour
+    </button>
      <br>
-    <div class="cardsection">
+    <div class="cardsection" data-tour="step: 2; title: Promo code; content: Example cart promo code text displays promo code description">
 
-      <div class="containigcard">
+      <div class="containigcard" >
           <div class="imgflexed">
               <div class="logoside"><img src="https://risktechadvisory.com/wp-content/uploads/2021/03/Risktech_logo.svg" alt=""></div>
               <div class="taggd">2 Minutes Ago</div>
@@ -197,7 +202,7 @@
 </div>
 
           <div class="job-card-button">
-          <a href="index copy 2.html" class="search-buttons card-buttons">Apply Now</a>     
+          <a href="index copy 2.html" class="search-buttons card-buttons" data-tour="step: 3; title: Customer name; content: Example cart customer name text displays customer name description">Apply Now</a>     
               <button class="search-buttons card-buttons-msg">Save</button>
           </div>
                   </div> 
@@ -367,6 +372,11 @@
   <!-- 
     - custom js link
   -->
+  <script src='https://cdn.jsdelivr.net/gh/LikaloLLC/tourguide.js@0.2.0/tourguide.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js'></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js'></script>
+  <script src="ssss.js"></script>
+
 
   <script src="static/js/jquery.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
