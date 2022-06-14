@@ -212,7 +212,7 @@ a{
         <div class="card-body d-flex align-items-center justify-content-start p-5 flex-sm-column flex-column flex-md-row">
           <img src="https://i.ibb.co/px2XJnS/profile.png" class="rounded-circle bg-secondary mb-sm-4 mb-4 mb-md-0" alt="profile" width="200" />
           <div class="dflex">
-            <h1 class="display-4 fw-bold mb-0">{{user}}</h1>
+            <h1 class="display-4 fw-bold mb-0">{{ccc.company_about}}</h1>
             <p class="fs-3 fw-normal">Developer</p>
             <div class="d-flex2 align-items-center justify-content-between">
 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, accusantium. lorem50
@@ -251,89 +251,23 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, accusantium. 
                      <br>
 
                     <div class="flexdoc">
-                      <a href="" class="doc">
+                      {%for a in pdf %}
+                      <a href="{{a.document_file.url}}"  download="pdf_file" class="doc">
                         <img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" alt="">
                        <span>
                         testament 
                        </span>
                       </a>
+                      {%endfor%}
 
-                      <a href="" class="doc">
-                        <img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" alt="">
-                       <span>
-                        testament 
-                       </span>
-                      </a>
 
-                      <a href="" class="doc">
-                        <img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" alt="">
-                       <span>
-                        testament 
-                       </span>
-                      </a>
 
-                      <a href="" class="doc">
-                        <img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" alt="">
-                       <span>
-                        testament 
-                       </span>
-                      </a>
 
-                      <a href="" class="doc">
-                        <img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" alt="">
-                       <span>
-                        testament 
-                       </span>
-                      </a>
 
-                      <a href="" class="doc">
-                        <img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" alt="">
-                       <span>
-                        testament 
-                       </span>
-                      </a>
 
-                      <a href="" class="doc">
-                        <img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" alt="">
-                       <span>
-                        testament 
-                       </span>
-                      </a>
 
-                      <a href="" class="doc">
-                        <img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" alt="">
-                       <span>
-                        testament 
-                       </span>
-                      </a>
 
-                      <a href="" class="doc">
-                        <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="">
-                       <span>
-                        testament 
-                       </span>
-                      </a>
 
-                      <a href="" class="doc">
-                        <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="">
-                       <span>
-                        testament 
-                       </span>
-                      </a>
-
-                      <a href="" class="doc">
-                        <img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" alt="">
-                       <span>
-                        testament 
-                       </span>
-                      </a>
-
-                      <a href="" class="doc">
-                        <img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" alt="">
-                       <span>
-                        testament 
-                       </span>
-                      </a>
 
                       
                     </div>
@@ -344,33 +278,30 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, accusantium. 
                   <div class="headarea" style="width: 100%; margin-bottom: -7px;  margin-top: 20px; background-color: white; padding: 10px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;">
                     <div class="headingtxt"><h2 class="carx">About Company </h2></div> <div class="addbutton" style="float: right;"><a href=""><ion-icon name="add-circle-outline"></ion-icon></a></div>
                    </div>
-{%for c in ccc %}
+
                   <div class="whitecolor">
    
                     <div class="projectbody">
-              <h2 class="">Company Name</h2>
+              <h2 class="">{{ccc.company_name}}</h2>
                       <div>
                         <div class="disposs">
                           <div class="col-md-4 mb-4 mb-md-0 mb-auto">
                             <img src="https://raw.githubusercontent.com/neeraj15022001/bootstrap-resume/master/logo.png" alt="logo" class="img-fluid bg-secondary rounded" />
                           </div>
                           <div class="col-md-8">
-                            <div class="okk">  <p class="fs-2 fw-bolder text-dark">{{c.company_name}}</p> <div class="iconxx" style="display: flex; margin-right: 10px; gap: 10px;"> <a href=""><ion-icon name="create-outline"></ion-icon></a> <a href=""><ion-icon name="trash-outline"></ion-icon> </a>  </div> </div>
+                            <div class="okk">  <p class="fs-2 fw-bolder text-dark">{{ccc.company_name}}</p> <div class="iconxx" style="display: flex; margin-right: 10px; gap: 10px;"> <a href=""><ion-icon name="create-outline"></ion-icon></a> <a href=""><ion-icon name="trash-outline"></ion-icon> </a>  </div> </div>
                            
                             <p>
-{{c.company_about}}
+{{ccc.company_about}}
                             </p>
-                            <a href="" class="
-                                  stretched-link
-                                  text-capitalize text-decoration-none
-                                "><i class="bi bi-link-45deg me-1"></i>Find out more</a>
+
                           </div>
                           
                         </div>
                       </div>
                     </div>
                   </div>
- {%endfor%}
+
           
                   <div class="headarea" style="width: 100%; margin-bottom: -7px;  margin-top: 20px; background-color: white; padding: 10px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;">
                    <div class="headingtxt"><h2 class="carx">Work Experience  </h2></div> <div class="addbutton" style="float: right;"><a href=""><ion-icon name="add-circle-outline"></ion-icon></a></div>
@@ -405,15 +336,27 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, accusantium. 
                       <div class="mylest">
                         <div class="iconflex">
                           <i class="bi bi-geo-alt-fill text-danger"></i>
-                          <span class="ms-2">Punjab,India</span>
+                          <span class="ms-2">{{ccc.company_address}}</span>
                         </div>
                         <div class="iconflex">
                           <i class="bi bi-envelope-fill text-primary"></i>
-                          <a href="mailto:gneeraj32595@gmail.com" class="ms-2 text-decoration-none text-dark">gneeraj32595@gmail.com</a>
+                          <a href="mailto:{{ccc.company_email}}" class="ms-2 text-decoration-none text-dark">{{ccc.company_email}}</a>
                         </div>
                         <div class="iconflex">
                           <i class="bi bi-telephone-fill text-success"></i>
-                          <a href="#" class="ms-2 text-decoration-none text-dark">+91 12345 12345</a>
+                          <a href="#" class="ms-2 text-decoration-none text-dark">{{ccc.company_phonenumber}}</a>
+                        </div>
+                        <div class="iconflex">
+                          <i class="bi bi-telephone-fill text-success"></i>
+                          <a href="#" class="ms-2 text-decoration-none text-dark">{{ccc.company_company_website}}</a>
+                        </div>
+                        <div class="iconflex">
+                          <i class="bi bi-telephone-fill text-success"></i>
+                          <a href="#" class="ms-2 text-decoration-none text-dark">{{ccc.linkdinlink}}</a>
+                        </div>
+                        <div class="iconflex">
+                          <i class="bi bi-telephone-fill text-success"></i>
+                          <a href="#" class="ms-2 text-decoration-none text-dark">{{ccc.github}}</a>
                         </div>
                       </div>
                     </div>
@@ -432,11 +375,9 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, accusantium. 
                             </p>
                           </div>
                           <div class="ps-4">
-                            <p class="textmuted">Name</p>
-                            <p class="textmuted">Position</p>
-                            <p class="textmuted">Name</p>
-                            <p class="textmuted">Posit</p>
-                            <p class="textmuted">oject Name</p>
+                            {%for u in ccc.allowed %}
+                            <p class="textmuted">{{u.username}}</p>
+                            {%endfor%
                           </div>
                         </div>
                       </div>
@@ -447,14 +388,14 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, accusantium. 
                       <div class="addbutton" style="float: right;"><a href=""><ion-icon name="add-circle-outline"></ion-icon></a></div>
                      </div>
                     <div class="car">
-                      <h2 class="card-title fs-3 fw-bold mb-4">Education</h2>
+                      <h2 class="card-title fs-3 fw-bold mb-4">Company Type</h2>
                       <div class="iconflex">
                         <div class="">
                           <i class="m-0 p-0 bi bi-building"></i>
                         </div>
                         <div class="iconflexs">
-                          <p class="fw-bold">Scl</p>
-                          <p class="text-muted">BE (2019 - Current)</p>
+                          <p class="fw-bold">{{ccc.company_type}}</p>
+                          <p class="text-muted">{{ccc.company_website}}</p>
                         </div>
                       </div>
                     </div>
