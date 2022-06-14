@@ -10,11 +10,11 @@ const PATH = {
 };
 const ELEMS = PATH.cardItem;
 const NUM_INIT_VISIBLE_ELEMS = 4;
-const NUM_ELEMS_TO_REVEAL = 6;
+const NUM_ELEMS_TO_REVEAL = 4;
 const ADD_COUNTER_TO_LOAD_MORE_BTN = true;
 // pass here an animation type from animate.css in 'fadeIn' or 'slideDown' way
 // !!! CHANGE IT TO CONST IN YOUR CODE
-let ANIMATE_CSS_ANIMATION_TYPE = "";
+let ANIMATE_CSS_ANIMATION_TYPE = "shakeY";
 // here you could pass any utility classes from animate.css (like delays etc) in animate_className way
 // DON'T PASS animate_animated here, it's added by default
 const ANIMATE_CSS_ADDITIONAL_CLASSES = [];
