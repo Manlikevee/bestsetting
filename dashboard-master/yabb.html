@@ -257,7 +257,7 @@
                             <td>Product Designer</td>
                             <td>March 15, 2022 </td>
                             <td> <span class="status Accepted">Accepted</span></td>
-                            <td><a href="/singleadminapplications/12/">Application </a></td>
+                            <td><a href="/singleadminapplications/12/">Application </a> </td>
                         </tr>
             
                         <tr>
@@ -295,8 +295,10 @@
 
             
                     </tbody>
+                    
             </table>
-        
+     
+            <button onclick="download()">Download csv file</button>
             </div>
           </div>
     </section>
@@ -365,6 +367,43 @@
   <!-- 
     - custom js link
   -->
+  <script>
+    const headRow = [...document.querySelectorAll('table thead tr th')]
+	.map(column => column.textContent.trim());
+
+const rows = [...document.querySelectorAll('table tbody tr')]
+	.map(tr => [...tr.querySelectorAll('td')]
+		.map(td => td.textContent.trim())
+	);
+
+const content = [headRow, ...rows]
+	.map(row => row.map(str => '"' + (str ? str.replace(/"/g, '""') : '') + '"'))
+	.map(row => row.join(','))
+	.join('\n');
+
+const BOM = '\uFEFF'; // utf-8 byte-order-mark
+const csvBlob = new Blob([BOM + content], { type: 'text/csv;charset=utf-8' });
+
+function showCsv(){
+	console.log(content);
+}
+
+function download(){
+	if (window.navigator.msSaveOrOpenBlob) { 
+		// IE hack; see http://msdn.microsoft.com/en-us/library/ie/hh779016.aspx
+		navigator.msSaveBlob(csvBlob, 'exampleTable.csv');
+	} else {
+		const objectUrl = URL.createObjectURL(csvBlob);
+		const a = document.createElement('a');
+		a.setAttribute('href', objectUrl);
+		a.setAttribute('download', 'exampleTable.csv');
+
+		document.body.appendChild(a);
+		a.click();
+		document.body.removeChild(a);	
+	}
+}
+  </script>
 
   <script src="static/js/jquery.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
